@@ -5,6 +5,9 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+body{
+    min-width: 1200px
+}
 
 .wrapper{
     display: flex;
