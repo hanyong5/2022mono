@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    min-width:1200px
+}
+.headerWrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    padding:0 80px;
+    transition:0.3s
+}
+
+
+@media screen and (max-width:1300px){
+    .headerWrap{padding:0 10px}
+}
+
+.headerWrap h1{width: 208px;height: 60px;}
+.gnb{
+    width: 840px;
+}
+.gnb ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gnb a{display: block;padding:0 25px;font-size: 22px;}
+
+.headerWrap .btn{
+    display: block;width: 118px;height: 50px;
+    text-indent: -1000px;overflow: hidden;
+    background-image: url(../images/login_icon_out.png);
+    transition:0.3s
+}
+.headerWrap .btn:hover{background-image: url(../images/login_icon_on.png);}
+
+
+
+
+
+.footerWrap{background: #000;padding: 45px 0;padding-right: 20px;}
+.footer{
+    width: 1200px;margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.clogo{margin-right: 20px;}
+.copyWrap{width: 880px;}
+.cNav{margin-bottom: 18px;}
+.cNav ul{
+    display: flex;
+    align-items: center;
+}
+.cNav a{display: block;padding: 10px 10px;color:#767676;font-size: 14px;}
+.cNav li:nth-child(1) a{padding-left: 0;}
+.cNav li:nth-child(3) a{font-weight: bold;color:#aaaaaa}
+.cNav .bar{width: 1px;height: 10px;background: #202020;}
+.copyWrap address{font-style: normal;color:#505050;font-size: 14px;line-height: 26px;}
+.footer .co{
+    font-size: 14px;color:#aaa;border-bottom: 1px solid #202020;
+    align-self:flex-start;
+    padding-bottom: 20px;width: 188px;
+    background: url(../images/arrow.png) no-repeat right 10px;
+    cursor:pointer
+}
