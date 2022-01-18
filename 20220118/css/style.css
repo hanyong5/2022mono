@@ -30,7 +30,7 @@ body{
     flex:1 auto;
     display: flex;
 }
-.container div{
+.container>div{
     flex:1;
     
    
@@ -38,17 +38,17 @@ body{
 .container div.left{
     background: #1157d9;
     display: flex;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
 }
 .container div.right{
     background: #dee5eb;
     display: flex;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
 }
 
-.card{text-align: center;}
+.card{text-align: center; width: 420px;}
 .card img{
     display: block;margin: 0 auto;
     margin-bottom: 3em;
