@@ -10,20 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="headerWrap">
-            <img src="images/logo.png" alt="">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
         </div>
         <section class="container">
-            <div class="left">
+            <div class="left" onclick="location.href='view01.html'">
                 <div class="card">
-                    <img src="images/main_icon01.png" alt="" class="mb4">
+                    <div class="img mb4">
+                        <img src="images/main_icon01_off.png" alt="">
+                    </div>
+                    
                     <div class="card_body">
-                        <h3 class="cy">생물안전 국가관리</h3>
-                        <p class="mb4 cw">통합관리시스템</p>
-                        <a href="#"  class="btn cb">
+                        <h3>생물안전 국가관리</h3>
+                        <p class="mb4">통합관리시스템</p>
+                        <a href="#"  class="btn">
                             바로가기
                         </a>
                     </div>
@@ -31,7 +35,9 @@
             </div>
             <div class="right">
                 <div class="card">
-                    <img src="images/main_icon02.png" alt="" class="mb4">
+                    <div class="img mb4">
+                        <img src="images/main_icon02_off.png" alt="">
+                    </div>
                     <div class="card_body">
                         <h3>위해성평가</h3>
                         <p class="mb4">자가평가</p>

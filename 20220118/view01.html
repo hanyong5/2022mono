@@ -10,42 +10,88 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/view.css">
+    <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
     
-    <header class="headerWrap">
-        <h1><a href="#"><img src="images/logo.png" alt=""></a></h1>
-        <nav class="gnb">
-            <ul>
-                <li><a href="#">유전자변형생물체 소개</a></li>
-                <li><a href="#">생물안전∙생물보안 사고·접수</a></li>
-                <li><a href="#">커뮤니티</a></li>
-            </ul>
-        </nav>
-        <a href="#" class="btn">로그인</a>
-    </header>
+    <div class="wrap">
+        <header class="headerWrap mb5">
+            <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">유전자변형생물체 소개</a></li>
+                    <li><a href="#">생물안전∙생물보안 사고·접수</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn">로그인</a>
+        </header>
+        <div class="container view m-auto f-1 mb10">
+            <h3 class="t-center">생물안전 국가관리 통합관리시스템</h3>
+            <div class="contents">
+                <ul>
+                    <li onclick="location.href='detail01.html'">
+                        <div class="card">
+                            <div class="img m-auto">
+                                <img src="images/view_icon01_off.png" alt="">
+                            </div>
+                            <div class="card_body t-center t-white">
+                                <h4><span class="bold">유전자변형생물체</span><br>
+                                    국가안전관리</h4>
+                                <a href="#" class="btn m-auto">바로가기</a>
+                            </div>
+                        </div>
 
-    <footer class="footerWrap">
-        <div class="footer">
-            <div class="clogo"><img src="images/c_logo.png" alt=""></div>
-            <div class="copyWrap">
-                <nav class="cNav">
-                    <ul>
-                        <li><a href="#">이용안내</a></li>
-                        <li><div class="bar"></div></li>
-                        <li><a href="#">개인정보처리방침</a></li>
-                        <li><div class="bar"></div></li>
-                        <li><a href="#">저자권정책</a></li>
-                    </ul>
-                    
-                </nav>
-                <address>
-                    (28159) 충북 청주시 흥덕구 오송읍 오송생명2로 187 오송보건의료행정타운내 질병관리청<br>COPYRIGHT © 2019 질병관리청 ALL RIGHTS RESERVED.
-                </address>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="img m-auto">
+                                <img src="images/view_icon02_off.png" alt="">
+                            </div>
+                            <div class="card_body t-center t-white">
+                                <h4><span class="bold">고위험병원체</span><br>
+                                    국가안전관리</h4>
+                                <a href="#" class="btn m-auto">바로가기</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="img m-auto">
+                                <img src="images/view_icon03_off.png" alt="">
+                            </div>
+                            <div class="card_body t-center t-white">
+                                <h4><span class="bold">생활안전시설</span><br>
+                                    국가안전관리</h4>
+                                <a href="#" class="btn m-auto">바로가기</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="co">관련사이트 바로가기</div>
         </div>
-    </footer>
+        <footer class="footerWrap">
+            <div class="footer">
+                <div class="clogo"><img src="images/c_logo.png" alt=""></div>
+                <div class="copyWrap">
+                    <nav class="cNav">
+                        <ul>
+                            <li><a href="#">이용안내</a></li>
+                            <li><div class="bar"></div></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><div class="bar"></div></li>
+                            <li><a href="#">저자권정책</a></li>
+                        </ul>
+        
+                    </nav>
+                    <address>
+                        (28159) 충북 청주시 흥덕구 오송읍 오송생명2로 187 오송보건의료행정타운내 질병관리청<br>COPYRIGHT © 2019 질병관리청 ALL RIGHTS RESERVED.
+                    </address>
+                </div>
+                <div class="co">관련사이트 바로가기</div>
+            </div>
+        </footer>
+    </div>
     
 </body>
 </html>

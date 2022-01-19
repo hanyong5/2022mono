@@ -32,11 +32,11 @@ body{
 }
 .container>div{
     flex:1;
-    
+    cursor: pointer;
    
 }
 .container div.left{
-    background: #1157d9;
+    background:var(--gray1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,6 +67,24 @@ body{
     margin: 0 auto
 }
 
+.container>div .img{width: 80px;height: 80px;margin: 0 auto;background-repeat: no-repeat;background-position: center;}
+.container>div .img img{display: none;}
+
+.container div.left .img{background-image: url(../images/main_icon01_off.png);}
+.container div.left:hover .img{background-image: url(../images/main_icon01_on.png);}
+
+.container> div:hover{background: var(--color1);}
+.container> div:hover .btn{color: var(--color1);}
+.container> div:hover h3{color: var(--color4);}
+.container> div:hover p{color:white;}
+
+.container div.right .img{background-image: url(../images/main_icon02_off.png);}
+.container div.right:hover .img{background-image: url(../images/main_icon02_on.png);}
+
+/* .container div.right:hover{background: var(--color1);}
+.container div.right:hover .btn{color: var(--color1);}
+.container div.right:hover h3{color: var(--color4);}
+.container div.right:hover p{color:white;} */
 
 
 /* footer */
@@ -88,14 +106,3 @@ body{
 
 
 
-/* common  */
-.mb0{margin-bottom: 0rem !important;}
-.mb1{margin-bottom: 0.25rem !important;}
-.mb2{margin-bottom: 0.75rem !important;}
-.mb3{margin-bottom: 1rem !important;}
-.mb4{margin-bottom: 1.5rem !important;}
-.mb4{margin-bottom: 2rem !important;}
-
-.cy{color:#fff13f !important}
-.cw{color: #fff  !important;}
-.cb{color: #1157d9 !important;}
