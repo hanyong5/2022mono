@@ -186,5 +186,22 @@ body{
     padding: 10px 20px;
     display: block;
 }
-.sWrap .inp{width: 300px;height: 50px;border: 1px solid #e0e0e0;outline: 0;text-indent: 10px;float: left;}
+.sWrap .inp{float: left;}
 .sWrap .iBtn{border: 0 none;width:100px;height: 50px;background: #000;color:white;cursor: pointer;float: left;}
+
+.inp{height: 50px;border: 1px solid #e0e0e0;outline: 0;text-indent: 10px;}
+.inp.w300{width: 300px !important;}
+.inp.w250{width: 250px !important;}
+.inp.w100{width: 100% !important;}
+
+
+/* search bbs view */
+
+.container.confirm01 .titleWrap{padding: 0 40px;border-top: 1px solid #000;}
+.container.confirm01 .title,.container.confirm01 .date{display: flex;}
+
+.container.confirm01 .title .txt,.container.confirm01 .date .txt{
+    width: 220px;font-weight: 500;display: flex;align-items:center;
+    flex:0 0 auto
+
+}
