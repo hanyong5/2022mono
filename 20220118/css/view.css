@@ -235,7 +235,7 @@ body{
 .container.reWrite .radioView  label{width: 100px; }
 .container.reWrite .selectView1{display: flex;visibility: hidden;}
 .container.reWrite .lmoViewWrap>div{display: none;}
-.modalView{display: none;}
+.modalView{display: none;width: 100px;height: 100px;background: gray;position: fixed;left:50%;top:50%}
 
 
 
