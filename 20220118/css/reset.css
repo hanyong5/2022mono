@@ -9,3 +9,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+.blind{display: block;position: absolute;left: 0;top: -9999px;}
+fieldset{
+    border: 1px solid #dadada;background-color: #fff;
+    margin-bottom: 10px;
+}

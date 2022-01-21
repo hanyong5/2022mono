@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질병관리청</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/view.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    
+    <div class="wrap">
+        <header class="headerWrap mb5">
+            <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">유전자변형생물체 소개</a></li>
+                    <li><a href="#">생물안전∙생물보안 사고·접수</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn">로그인</a>
+        </header>
+        <!-- container  -->
+        <div class="container reWrite m-auto f-1 mb10">
+            <h3 class="t-center mb6">개발·실험 LMO 실험 승인</h3>
+            <!-- contents  -->
+            <div class="contents">
+                <form action="#" method="post">
+                    <legend class="blind">연구과제</legend>
+                    <div class="field">
+                        <label for="subject" >연구과제</label>
+                        <input type="text" class="inp w100" placeholder="연구제목입력" name="subject" id="subject"> 
+                    </div>
+                    <div class="field">
+                        <label for="info" >병원체정보</label>
+                        <div class="infoWrap">
+                            <select name="info" id="info" class="inp  w250">
+                                <option value="v1">Avian influenza virus H7N9</option>
+                            </select>
+                            <a href="#" class="bbsBtn black">선택</a>
+                        </div>
+                        <div class="btnWrap">
+                            <a href="#" class="bbsBtn gray mr1 modal">기본정보출력</a>
+                            <a href="#" class="bbsBtn gray">관계법령출력</a>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="exConfirm">동물실험여부</label>
+                        <div class="radioView">
+                            <input type="radio" name="exConfirm" id="exConfirm" class="radio1" checked value="false" onclick="radioCheck()"> <label for="exConfirm">아니오</label>   
+                            <input type="radio" name="exConfirm" id="exConfirm_t" class="radio2"  value="true"  onclick="radioCheck()"> <label for="exConfirm_t">예</label>   
+                        </div>
+                        <div class="selectView1">
+                            <a href="#" class="bbsBtn mr1">동물선택</a>
+                            <a href="#" class="bbsBtn black">선택</a>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="lmoEx">LMO실험여부</label>
+                        <div class="radioView">
+                            <input type="radio" name="lmoEx" id="lmoEx" class="radio1" checked value="false"> <label for="lmoEx">아니오</label>   
+                            <input type="radio" name="lmoEx" id="lmoEx_t" class="radio2"  value="true"> <label for="lmoEx_t">예</label>   
+                        </div>
+                        <div class="checkView">
+                            <div class="txt">도입유래 오리진 선택</div>
+                            <input type="checkbox" id="chk01" onclick="lmoView(0)" name="chk01" value="병원체"> <label for="chk01">병원체 유전자</label>  
+                            <input type="checkbox" id="chk02" onclick="lmoView(1)" name="chk02"  value="독소생성"> <label for="chk02">독소생성 유전자</label>
+                            <input type="checkbox" id="chk03" onclick="lmoView(2)" name="chk03"  value="항생제 내성"> <label for="chk03">항생제 내성 유전자</label>
+
+                        </div>
+                        <div class="lmoViewWrap">
+                            <div class="lmoView01">
+                                1111
+                            </div>
+                            <div class="lmoView02">
+                               2222
+                            </div>
+                            <div class="lmoView03">
+                               3333
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="field">
+                        <label for="cell">배양규모</label>
+                        <input type="text" id="cell" class="inp w250" name="cellCount" value="11">
+                        <div class="bbsBtn black" onclick="cellCount()">입력</div> 
+                        <div class="bbsBtn gray cellPrint" style="display:none">관계법령출력</div>
+                        
+                    </div>
+                   
+                        
+                   
+                    
+                    
+                    
+                    
+                   
+
+                    
+                    <!-- <div class="bottomBtn">
+                        <ul class="clearfix left">
+                            <li><a href="confirm.html" class="bbsBtn black">목록</a></li>
+                            <li><a href="#" class="bbsBtn">삭제</a></li>
+                        </ul>
+                        <ul class="clearfix right">
+                            <li><a href="#" class="bbsBtn">임시저장</a></li>
+                            <li><a href="#" class="bbsBtn primary">제출하기</a></li>
+                        </ul>
+                    </div> -->
+                </form>
+
+
+
+            </div>
+            <!-- contents  --> 
+        </div>
+
+        <footer class="footerWrap">
+            <div class="footer">
+                <div class="clogo"><img src="images/c_logo.png" alt=""></div>
+                <div class="copyWrap">
+                    <nav class="cNav">
+                        <ul>
+                            <li><a href="#">이용안내</a></li>
+                            <li><div class="bar"></div></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><div class="bar"></div></li>
+                            <li><a href="#">저자권정책</a></li>
+                        </ul>
+        
+                    </nav>
+                    <address>
+                        (28159) 충북 청주시 흥덕구 오송읍 오송생명2로 187 오송보건의료행정타운내 질병관리청<br>COPYRIGHT © 2019 질병관리청 ALL RIGHTS RESERVED.
+                    </address>
+                </div>
+                <div class="co">관련사이트 바로가기</div>
+            </div>
+        </footer>
+    </div>
+    <style>
+        .modalView{width: 100px;height: 100px;background: gray;position: fixed;left:50%;top:50%}
+    </style>
+    <div class="modalView">
+        test입니다. <a href="#" onclick="modalClose()">[닫기]</a>
+    </div>
+
+
+
+    <script>
+        //radio
+        const radioView = document.querySelectorAll(".radioView>input");
+        const selectView = document.querySelector(".selectView1");
+
+        //checkbox
+        const checkView = document.querySelectorAll(".checkView>input");
+        const lmoViewDiv = document.querySelectorAll(".lmoViewWrap>div")
+
+        
+        function radioCheck() {
+            if (radioView[0].checked) {
+                selectView.style.visibility = "hidden";
+            }
+            if (radioView[1].checked) {
+                selectView.style.visibility = "visible";
+            }
+        }
+
+        function lmoView(i){
+            if(checkView[i].checked){
+                lmoViewDiv[i].style.display = "block"
+            }else{
+                lmoViewDiv[i].style.display = "none"
+            }
+        }
+
+
+        //modal
+        const modal1 = document.querySelector(".modal");
+        const modalView1 = document.querySelector(".modalView");
+
+        modal1.addEventListener("click",function(event){
+            event.preventDefault()
+            modalView1.style.display="block"
+        })
+        function modalClose(){
+            event.preventDefault()
+            modalView1.style.display="none"
+        }
+        
+
+        //cell count
+        const cell = document.querySelector("#cell");
+        const cellPrint = document.querySelector(".cellPrint");
+        function cellCount(){
+            console.log( cell.value);
+
+            if(cell.value>10){
+                cellPrint.style.display = "block"
+            }else{
+                cellPrint.style.display = "none"
+            }
+        }
+
+
+        
+
+    </script>
+</body>
+</html>
