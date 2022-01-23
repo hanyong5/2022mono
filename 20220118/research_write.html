@@ -28,94 +28,244 @@
         </header>
         <!-- container  -->
         <div class="container reWrite m-auto f-1 mb10">
-            <h3 class="t-center mb6">개발·실험 LMO 실험 승인</h3>
+            <h3 class="t-center mb6">위해성평가 자가진단</h3>
             <!-- contents  -->
             <div class="contents">
                 <form action="#" method="post">
-                    <legend class="blind">연구과제</legend>
-                    <div class="field">
-                        <label for="subject" >연구과제</label>
-                        <input type="text" class="inp w100" placeholder="연구제목입력" name="subject" id="subject"> 
-                    </div>
-                    <div class="field">
-                        <label for="info" >병원체정보</label>
-                        <div class="infoWrap">
-                            <select name="info" id="info" class="inp  w250">
-                                <option value="v1">Avian influenza virus H7N9</option>
-                            </select>
-                            <a href="#" class="bbsBtn black">선택</a>
-                        </div>
-                        <div class="btnWrap">
-                            <a href="#" class="bbsBtn gray mr1 modal">기본정보출력</a>
-                            <a href="#" class="bbsBtn gray">관계법령출력</a>
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <label for="exConfirm">동물실험여부</label>
-                        <div class="radioView">
-                            <input type="radio" name="exConfirm" id="exConfirm" class="radio1" checked value="false" onclick="radioCheck()"> <label for="exConfirm">아니오</label>   
-                            <input type="radio" name="exConfirm" id="exConfirm_t" class="radio2"  value="true"  onclick="radioCheck()"> <label for="exConfirm_t">예</label>   
-                        </div>
-                        <div class="selectView1">
-                            <a href="#" class="bbsBtn mr1">동물선택</a>
-                            <a href="#" class="bbsBtn black">선택</a>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label for="lmoEx">LMO실험여부</label>
-                        <div class="radioView">
-                            <input type="radio" name="lmoEx" id="lmoEx" class="radio1" checked value="false"> <label for="lmoEx">아니오</label>   
-                            <input type="radio" name="lmoEx" id="lmoEx_t" class="radio2"  value="true"> <label for="lmoEx_t">예</label>   
-                        </div>
-                        <div class="checkView">
-                            <div class="txt">도입유래 오리진 선택</div>
-                            <input type="checkbox" id="chk01" onclick="lmoView(0)" name="chk01" value="병원체"> <label for="chk01">병원체 유전자</label>  
-                            <input type="checkbox" id="chk02" onclick="lmoView(1)" name="chk02"  value="독소생성"> <label for="chk02">독소생성 유전자</label>
-                            <input type="checkbox" id="chk03" onclick="lmoView(2)" name="chk03"  value="항생제 내성"> <label for="chk03">항생제 내성 유전자</label>
-
-                        </div>
-                        <div class="lmoViewWrap">
-                            <div class="lmoView01">
-                                1111
+                    <fieldset>
+                        <legend class="blind">연구과제</legend>
+                        <div class="fieldWrap">
+                            <div class="field mb4">
+                                <label for="subject" >연구과제</label>
+                                <input type="text" class="inp flex1" placeholder="연구제목입력" name="subject" id="subject">
                             </div>
-                            <div class="lmoView02">
-                               2222
+                            <div class="field mb4">
+                                <label for="info">병원체정보</label>
+                                <div class="infoWrap">
+                                    <select name="info" id="info" class="inp  w250">
+                                        <option value="v1">Avian influenza virus H7N9</option>
+                                    </select>
+                                    <a href="javasript:void(0)" class="bbsBtn black">선택</a>
+                                </div>
+                                <div class="btnWrap">
+                                    <a href="javasript:void(0)" class="bbsBtn gray mr1 modal">기본정보출력</a>
+                                    <a href="javasript:void(0)" class="bbsBtn gray">관계법령출력</a>
+                                </div>
                             </div>
-                            <div class="lmoView03">
-                               3333
+                            <div class="field mb4">
+                                <label for="exConfirm">동물실험여부</label>
+                                <div class="radioView">
+                                    <input type="radio" name="exConfirm" id="exConfirm" class="radio1" checked value="false" onclick="radioCheck()"> <label for="exConfirm">아니오</label>   
+                                    <input type="radio" name="exConfirm" id="exConfirm_t" class="radio2"  value="true"  onclick="radioCheck()"> <label for="exConfirm_t">예</label>   
+                                </div>
+                                <div class="selectView1">
+                                    
+                                    <select name="ani-select" id="ani-select" class="inp w150">
+                                        <option value="">동물선택</option>
+                                        <option value="1">A동물</option>
+                                        <option value="2">B동물</option>
+                                    </select>
+                                    
+                                    <a href="javascript:void(0)" class="bbsBtn black" onclick="selectClick()">선택</a>
+                                    <div class="aniViewTxt">
+                                        동물을 선택하세요.
+                                    </div>
+                                </div>
                             </div>
+                            
+                        
+                            <div class="field con mb4">
+                                
+                                <label for="lmoEx">LMO실험여부</label>
+
+                                <div class="conWrap">
+                                    <div class="radioView">
+                                        <input type="radio" name="lmoEx" id="lmoEx" class="radio1" checked value="false"> <label for="lmoEx">아니오</label>   
+                                        <input type="radio" name="lmoEx" id="lmoEx_t" class="radio2"  value="true"> <label for="lmoEx_t">예</label>   
+                                    </div>
+                                    <div class="checkView">
+                                        <div class="txt">도입유래 오리진 선택</div>
+                                        <div class="chebox-item">
+                                            <input type="checkbox" id="chk01" onclick="lmoView(0)" name="chk01" value="병원체"> <label for="chk01"></label> <p> 병원체 유전자</p>
+                                            <input type="checkbox" id="chk02" onclick="lmoView(1)" name="chk02"  value="독소생성"> <label for="chk02"></label> <p>독소생성 유전자</p>
+                                            <input type="checkbox" id="chk03" onclick="lmoView(2)" name="chk03"  value="항생제 내성"> <label for="chk03"></label> <p>항생제 내성 유전자</p>
+                                        </div>
+                                        
+                                        
+            
+                                    </div>
+                                    <div class="lmoViewWrap">
+                                        <div class="lmoView01">
+                                            <div class="lmoWrap  clearfix">
+                                                <div class="lmoTitle">병원체정보</div>
+                                                <div class="restWrap">
+                                                    <p>국가승인여부</p>
+                                                    <input type="radio" id="regRadio01_01" name="regRadio01"> <label for="regRadio01_01">아니요</label>
+                                                    <input type="radio" id="regRadio01_02" name="regRadio01" checked> <label for="regRadio01_02">예</label>
+                                                </div>
+                                            </div>
+                                            <div class="mb1">
+                                                <a href="javascript:void(0)" class="bbsBtn primary">국가승인대상 정보출력</a>
+                                                <a href="javascript:void(0)" class="bbsBtn primary">생물안전등급 출력</a>
+                                            </div>
+                                            <div>
+                                                <a href="javascript:void(0)" class="bbsBtn primary">기관승인대상 출력</a>                                               </a>
+                                                <a href="javascript:void(0)" class="bbsBtn primary">생물안전등급 출력</a>
+                                            </div>
+
+                                        </div>
+                                        <div class="lmoView02 clearfix">
+                                            <div class="lmoWrap  clearfix">
+                                                <div class="lmoTitle">병원체정보</div>
+                                                <div class="restWrap">
+                                                    <p>국가승인여부</p>
+                                                    <input type="radio" id="regRadio02_01" name="regRadio02"> <label for="regRadio02_01">아니요</label>
+                                                    <input type="radio" id="regRadio02_02" name="regRadio02" checked> <label for="regRadio02_02">예</label>
+                                                </div>
+                                            </div>
+                                            <div class="mb1">
+                                                <a href="javascript:void(0)" class="bbsBtn primary">국가승인대상 정보출력</a>
+                                                <a href="javascript:void(0)" class="bbsBtn primary">생물안전등급 출력</a>
+                                            </div>
+                                            <div class="mb1">
+                                                <select name="" id="" class="inp w150">
+                                                    <option value="">100mg 미만</option>
+                                                </select>
+                                                <a href="javascript:void(0)" class="bbsBtn primary">국가승인대상 정보출력</a>
+                                                <a href="javascript:void(0)" class="bbsBtn primary">생물안전등급 출력</a>
+                                            </div>
+                                            <div class="mb1">
+                                                <select name="" id="" class="inp w150">
+                                                    <option value="">100mg 초과</option>
+                                                </select>
+                                                <a href="javascript:void(0)" class="bbsBtn primary">국가승인대상 정보출력</a>
+                                                <a href="javascript:void(0)" class="bbsBtn primary">생물안전등급 출력</a>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="lmoView03 clearfix">
+                                            <div class="lmoWrap  clearfix">
+                                                <div class="lmoTitle">병원체정보</div>
+                                                <div class="restWrap">
+                                                    <p>인정벡터 여부</p>
+                                                    <input type="radio" id="regRadio03_01" name="regRadio03"> <label for="regRadio03_01">아니요</label>
+                                                    <input type="radio" id="regRadio03_02" name="regRadio03" checked> <label for="regRadio03_02">예</label>
+                                                </div>
+                                            </div>
+                                            <div class="mb1">
+                                                <a href="javascript:void(0)" class="bbsBtn primary">국가승인면제∙기관승인대상 출력</a>
+                                                <a href="javascript:void(0)" class="bbsBtn primary">국가승인대상∙기관승인대상 출력</a>
+                                            </div>
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="field mb4 con">
+                                <label for="vector" >백터</label>
+
+                                <div class="conWrap">
+                                    <select name="" id="" class="inp w150 mb3">
+                                        <option value="">백터</option>
+                                        <option value="">백터</option>
+                                        <option value="">백터</option>
+                                    </select>
+                                    <div class="conInfo bgGray">
+                                        백터정보
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field mb4">
+                                <label for="cell">배양규모<span class="sub">LMO 10L 이상 여부</span></label>
+                                <input type="text" id="cell" class="inp w250" name="cellCount" placeholder="숫자를 입력하세요">
+                                <div class="bbsBtn black mr1" onclick="cellCount()">입력</div> 
+                                <div class="bbsBtn primary cellPrint" style="display:none">국가승인대상 정보출력</div>
+                                
+                            </div>
+                            <div class="field mb4 con">
+                                <label for="cell1">밀폐등급기준</label>
+                                <div class="conInfo bgGray">
+                                    ∙ BL2 권장：저병원성 조류 인플루엔자 바이러스를 취급하는 실험<br>
+                                        &nbsp;&nbsp;※ 고병원성 조류 인플루엔자 바이러스 백신균주(WHO 백신후보 균주 등) 취급, 고병원성 조류 인플루엔자 의심검체 진단 시 BL3에 준하는<br> &nbsp;&nbsp;생물안전운영 규정 준수<br>
+                                    ∙ BL3 권장：고병원성 조류 인플루엔자(일부 H5, H7)로 확인된 진단검체 취급, 바이러스 분리 등 바이러스를 직접 취급하는 실험<br>
+                                    ∙ ABL2 권장：저병원성 조류 인플루엔자 바이러스를 이용한 동물 감염실험 및 감염동물 해부 등<br>
+                                    ∙ ABL3 권장：고병원성 조류 인플루엔자(일부 H5, H7) 바이러스를 이용한 동물 감염실험 및 감염동물 해부 등<br>
+
+                                </div>
+                                
+                            </div>
+                            <div class="field mb4 con">
+                                <label for="cel2">실험정보입력</label>
+                                <div class="textareaWrap">
+                                  <textarea name="" id="" cols="30" rows="10" class="inp w100"></textarea>
+
+                                </div>
+                                
+                            </div>
+                            <div class="field mb4 con">
+                                <label for="cel3">백신정보제공</label>
+                                <div class="conInfo bgGray">
+                                    H5N1의 경우 불활화 백신(미국 FDA 승인) 있음
+                                </div>
+                                
+                            </div>
+
+                            <div class="field mb4">
+                                <label for="vac">백신접종여부 선택 </label>
+                                <div class="radioView">
+                                    <input type="radio" name="vac" id="vac" class="radio1" checked value="false"> <label for="vac">아니오</label>   
+                                    <input type="radio" name="vac" id="vac_t" class="radio2"  value="true" > <label for="vac_t">예</label>   
+                                </div>
+                                
+                            </div>
+                            <div class="field mb4 con">
+                                <label for="cell4">개인보호구 입력</label>
+                                <div class="textareaWrap">
+                                  <textarea name="" id="" cols="30" rows="10" class="inp w100"></textarea>
+
+                                </div>
+                                
+                            </div>
+                            <div class="field mb4 con">
+                                <label for="cell5">개인보호구 정보</label>
+                                <div class="conInfo bgGray">
+                                    ∙ BL2 : 평상복을 다 덮는 실험복과 장갑 착용. 에어로졸 발생 가능성이 있는 경우 호흡보호구 착용. 모든 감염 가능성이 있는 물질을 다루는 실험은 생물안전작업대에서 실험 수행<br>
+                                    ∙ BL3 : 고병원성 조류 인플루엔자(일부 H5, H7) 바이러스 취급 시 전신보호복, 덧신, 이중장갑, 호흡보호구(PAPR 또는 KF94(N95) 마스크와 헤드커버) 착용
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="field mb4 con">
+                                <label for="cell6">소독 및 불활성화<br>방법 입력</label>
+                                <div class="textareaWrap">
+                                  <textarea name="" id="" cols="30" rows="10" class="inp w100"></textarea>
+
+                                </div>
+                                
+                            </div>
+                            <div class="field mb4 con">
+                                <label for="cell7">소독 및 불활성화<br>방법 출력</label>
+                                <div class="conInfo bgGray">
+                                    ∙ 소독 및 불활성화：1% sodium hypochlorite, 70% ethanol, 56~60℃에서 60분 동안 가열, pH 1~3 또는 pH 10~14 용액에 처리, 121℃에서 15분 이상 고압증기멸균, glutaraldehyde<br>
+
+                                    ∙ 폐기물 처리：감염성 물질을 취급한 모든 폐기물은 고압증기멸균 등의 처리 후 의료폐기물로 처리
+                                    
+                                </div>
+                                
+                            </div>
+
+
+                        </div> <!-- fieldwrap  -->
+                        
+                    </fieldset>
+
+                    <div class="conformWrap">
+                        <div class="conform">
+                            
+                            <button type="button" class="bbsBtn primary">결과지 출력</button>
                         </div>
-                        
                     </div>
-
-                    <div class="field">
-                        <label for="cell">배양규모</label>
-                        <input type="text" id="cell" class="inp w250" name="cellCount" value="11">
-                        <div class="bbsBtn black" onclick="cellCount()">입력</div> 
-                        <div class="bbsBtn gray cellPrint" style="display:none">관계법령출력</div>
-                        
-                    </div>
-                   
-                        
-                   
-                    
-                    
-                    
-                    
-                   
-
-                    
-                    <!-- <div class="bottomBtn">
-                        <ul class="clearfix left">
-                            <li><a href="confirm.html" class="bbsBtn black">목록</a></li>
-                            <li><a href="#" class="bbsBtn">삭제</a></li>
-                        </ul>
-                        <ul class="clearfix right">
-                            <li><a href="#" class="bbsBtn">임시저장</a></li>
-                            <li><a href="#" class="bbsBtn primary">제출하기</a></li>
-                        </ul>
-                    </div> -->
                 </form>
 
 
@@ -147,8 +297,63 @@
         </footer>
     </div>
 
+    <!-- modal  -->
+    <div class="modalbg"></div>
     <div class="modalView">
-        test입니다. <a href="#" onclick="modalClose()">[닫기]</a>
+        <div class="titleWrap">
+            <h5>병원체 기본정보</h5>
+            <a href="#" onclick="modalClose()"><img src="images/icon_close.png" alt=""></a>
+        </div>
+        <table class="table">
+            <colgroup>
+                <col width="165">
+                <col width="*">
+                <col width="165">
+                <col width="*">
+            </colgroup>
+            <tr>
+                <th>병원체 위험군</th>
+                <td class="tac">제 2위험군</td>
+                <th>병원체 위험군</th>
+                <td>제 2위험군</td>
+            </tr>
+            <tr>
+                <th>병원성 및 감염증상</th>
+                <td colspan="3">잠복기 : 2~3일<br>
+                    급성 호흡기감염증을 유발함.<br>
+                    주로 성인에서 열이 나지 않는 감기를 일으키며, 콧물, 권태감이 특징임. 증상은 일주일정도 지속되며, 하기도 감염은 드묾.
+                </td>
+            </tr>
+            <tr>
+                <th>치료방법</th>
+                <td colspan="3">보존적 치료
+                </td>
+            </tr>
+            <tr>
+                <th>감염경로</th>
+                <td colspan="3">
+                    - 일반 감염경로：호흡기 비말 흡입, 분변­경구 경로 전파됨.<br>
+                    - 실험자 감염경로: 감염성 에어로졸 흡입, 감염성물질 접촉으로 인하여 감염 가능함.
+
+                </td>
+            </tr>
+            <tr>
+                <th>감염량</th>
+                <td colspan="3">-</td>
+            </tr>
+            <tr>
+                <th>숙주</th>
+                <td colspan="3">사람</td>
+            </tr>
+            <tr>
+                <th>실험실 획득감염<br>(감염사례)</th>
+                <td colspan="3">-</td>
+            </tr>
+            <tr>
+                <th>숙주외 환경저항성</th>
+                <td colspan="3">-</td>
+            </tr>
+        </table>
     </div>
 
 
@@ -159,8 +364,12 @@
         const selectView = document.querySelector(".selectView1");
 
         //checkbox
-        const checkView = document.querySelectorAll(".checkView>input");
-        const lmoViewDiv = document.querySelectorAll(".lmoViewWrap>div")
+        const checkView = document.querySelectorAll(".chebox-item>input");
+        const lmoViewDiv = document.querySelectorAll(".lmoViewWrap>div");
+        const lmoSelect = document.querySelector("#ani-select");
+
+         
+         
 
         
         function radioCheck() {
@@ -180,18 +389,36 @@
             }
         }
 
+        function selectClick(){
+            let selView = lmoSelect.selectedIndex
+            const selTextView = document.querySelector(".aniViewTxt");
+            console.log(selView)
+            if(selView == 1){
+                selTextView.innerHTML = "생물학적 유해물질 입니다."
+            }else if( selView == 2){
+                selTextView.innerHTML = "생물학적 유해물질이 아닙니다. "
+            }else{
+                selTextView.innerHTML = "동물을 선택하세요."
+            }
+        }
+
+
+
 
         //modal
         const modal1 = document.querySelector(".modal");
+        const modalbg = document.querySelector(".modalbg");
         const modalView1 = document.querySelector(".modalView");
 
         modal1.addEventListener("click",function(event){
             event.preventDefault()
             modalView1.style.display="block"
+            modalbg.style.display="block"
         })
         function modalClose(){
             event.preventDefault()
             modalView1.style.display="none"
+            modalbg.style.display="none"
         }
         
 

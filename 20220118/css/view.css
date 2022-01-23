@@ -123,9 +123,7 @@ body{
 
 /* content  detail*/
 
-.container.detail .tabWrap{
-    
-}
+
 .container.detail .tabWrap .tab{
     display: flex;
     align-items:center;
@@ -165,6 +163,34 @@ body{
 .container.confirm .table thead{height: 58px;border-bottom: 1px solid #e0e0e0;border-top: 2px solid #000;}
 .container.confirm .table tbody tr{height: 83px;text-align: center;border-bottom: 1px solid #e0e0e0;}
 .container.confirm .table .active{color:var(--color1)}
+
+/* content  confirm ok */
+.container.confirmOk .table{width: 100%;margin-bottom: 50px;}
+.container.confirmOk .table thead{height: 58px;border-bottom: 1px solid #e0e0e0;border-top: 2px solid #000;}
+.container.confirmOk .table tbody tr{height: 83px;text-align: center;border-bottom: 1px solid #e0e0e0;cursor: pointer;}
+.container.confirmOk .table tbody tr:hover{background: var(--gray4);}
+.container.confirmOk .table .active{color:var(--color1)}
+.container.confirmOk .table .modi{color:#f00}
+
+.container.confirmOk .tabWrap .tab{
+    display: flex;
+    align-items:center;
+    border: 1px solid #e0e0e0;
+}
+.container.confirmOk .tabWrap .tab li{
+    flex:1 0 auto;text-align: center;
+    font-size: 18px;
+    padding: 20px 0;
+    cursor: pointer;
+    
+}
+.container.confirmOk .tabWrap .tab li:hover{background: #000;color:white}
+.container.confirmOk .tabWrap .tab li.active{background: #000;color:white}
+
+.container.confirmOk .wall{width: 1px;height: 36px;background: #e0e0e0;}
+
+
+
 
 /* pager  */
 .container .pager{width: 480px;margin: 0 auto}
@@ -207,7 +233,7 @@ body{
 .container.confirm01 .conMenuWrap li{
     border: 1px solid #e0e0e0;border-top: 2px solid #000;
     float: left;margin-right: 40px;width:calc( ( 100% - 80px ) / 3 );margin-bottom:40px ;height: 240px;
-    display: flex;justify-content: center;align-items: center;
+    display: flex;justify-content: center;align-items: center;cursor: pointer;
 }
 .container.confirm01 .conMenuWrap li:nth-child(3){margin-right: 0;}
 .container.confirm01 h5{font-weight: 500;}
@@ -226,18 +252,55 @@ body{
 
 
 /* research_write  */
-.container.reWrite .field{display: flex;}
-.container.reWrite .field label{width: 220px;flex:0 0 auto;display: flex;align-items: center;}
+.container.reWrite .fieldWrap{border-top: 2px solid #000;border-bottom: 2px solid var(--gray3);padding: 60px 40px;}
+.container.reWrite .field{display: flex;align-items: center;}
+.container.reWrite .field .sub{display: block;font-size: 12px;color:#767676}
+
+.container.reWrite .field label{width: 165px;font-weight: 500;flex-shrink: 0;}
+.container.reWrite .field.con>label{height:50px;align-self:flex-start;display: flex;align-items: center;}
+.container.reWrite .field.con .conWrap{flex:1}
+.container.reWrite .field .textareaWrap{flex:1}
+.container.reWrite .field .textareaWrap textarea{padding: 20px;font-size: 14px;height:150px}
+
+
+
 .container.reWrite .infoWrap{display: flex;}
 .container.reWrite .btnWrap{display: flex;margin-left: auto;}
 
-.container.reWrite .radioView{display: flex;align-items: center;}
+.container.reWrite .radioView{display: flex;align-items: center;height:50px}
 .container.reWrite .radioView  label{width: 100px; }
 .container.reWrite .selectView1{display: flex;visibility: hidden;}
 .container.reWrite .lmoViewWrap>div{display: none;}
-.modalView{display: none;width: 100px;height: 100px;background: gray;position: fixed;left:50%;top:50%}
+
+.container.reWrite .checkView{display: flex;height: 50px;align-items: ;}
+.container.reWrite .checkView .txt{display: flex;align-items: center;padding-right: 20px;}
+.container.reWrite .checkView  .chebox-item{display: flex;align-items: center;}
+.container.reWrite .checkView  .chebox-item p{padding-right: 30px;}
+.container.reWrite .lmoViewWrap{width: 100%;}
+.container.reWrite .lmoViewWrap > div{width: 100%;border: 2px solid var(--gray3);padding: 40px 50px;margin-bottom: 10px;}
+.container.reWrite .lmoViewWrap .lmoTitle{float: left;height: 50px; font-size: 20px;}
+.container.reWrite .lmoViewWrap .restWrap{float: right;display: flex;align-items: center;}
+.container.reWrite .lmoViewWrap .restWrap p{width: 150px;}
+.container.reWrite .lmoViewWrap .restWrap label{width: 80px;margin-left: 10px;}
+.container.reWrite .lmoViewWrap a.bbsBtn{display: inline-block;}
+
+.container.reWrite .conInfo{padding: 20px;flex:1}
+.container.reWrite .conInfo.bgGray{background: var(--gray2);}
+.container.reWrite .conform{display: flex;margin-left:auto;}
+.container.reWrite .conformWrap{display: flex;}
 
 
+.modalbg{width: 100%;height: 100%;background: rgba(0,0,0,0.3);position: fixed;top: 0;left: 0;z-index: 10;display: none;}
+.modalView{display: none;width: 1000px;height: 600px;background: white;position: fixed;left:50%;top:50%;transform:translate(-50%,-50%);padding:30px 35px;z-index: 11}
+.modalView .titleWrap{display: flex;justify-content: space-between;border-bottom: 2px solid #000;padding-bottom: 20px;}
+.modalView .table{width: 100%;}
+.modalView .table tr{height: 50px;text-align: center;border-bottom: 1px solid #aaa;}
+.modalView .table th{background: var(--gray3);font-size: 16px;font-weight: 500;}
+.modalView .table td{text-align-last: left;padding:10px 20px}
+
+.container.reWrite .radioView label{margin-left: 10px;}
+.container.reWrite .selectView1{display: flex;align-items:center}
+.container.reWrite .selectView1 .aniViewTxt{margin-left: 10px;}
 
 .container.reWrite .bbsBtn{display: block;border: 1px solid #e0e0e0;background: white;height: 50px;text-align: center;padding: 13px 20px 20px 20px;}
 .container.reWrite .bbsBtn.black{background: #000;color:white;border: 0 none;}
@@ -245,12 +308,65 @@ body{
 .container.reWrite .bbsBtn.primary{background:var(--color1);color:white;border: 1px solid var(--color1);}
 
 
+.modalView.confirm{width: 600px;height: 380px;}
+.modalView .mdalBtnWrap{display: flex;}
+.modalView ul{display: flex;margin-left: auto;}
+.modalView .bbsBtn{display: block;border: 1px solid #e0e0e0;background: white;height: 50px;text-align: center;padding: 13px 20px 20px 20px;}
+.modalView .bbsBtn.black{background: #000;color:white;border: 0 none;}
+.modalView .bbsBtn.gray{background: #333;color:white;border: 0 none;}
+.modalView .bbsBtn.primary{background:var(--color1);color:white;border: 1px solid var(--color1);}
 
+
+/* confirm write  */
+.container.confirm_write .fieldWrap{border-top: 2px solid #000;border-bottom: 2px solid var(--gray3);padding: 60px 40px;}
+.container.confirm_write .fieldWrap.bnone{border-top: 0 none;}
+.container.confirm_write .field{display: flex;align-items:center;}
+.container.confirm_write .field label{width: 165px;font-weight: 500;}
+.container.confirm_write .field label .sub{display: block;font-size: 12px;color:#767676}
+.container.confirm_write .field .red{font-size: 12px;color:#ff3535;margin-left: 10px;}
+.container.confirm_write .field .wall{flex:1}
+.container.confirm_write .conform{display: flex;margin-left:auto;}
+.container.confirm_write .conformWrap{display: flex;}
 
 
 /* input  */
+form legend{font-size: 20px;font-weight: 500;}
+form fieldset{border: 0 none;}
 .inp{height: 50px;border: 1px solid var(--gray3);outline: 0;text-indent: 10px;}
 
 .inp.w300{width: 300px !important;}
+.inp.w400{width: 400px !important;}
 .inp.w250{width: 250px !important;}
+.inp.w150{width: 150px !important;}
+.inp.w750{width: 750px !important;}
 .inp.w100{width: 100% !important;}
+.inp.flex1{flex:1}
+.inp.select{
+    background: url(../images/select_icon.png) no-repeat 95% center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    
+}
+.inp.date{
+    background: url(../images/day.png) no-repeat 95% center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    
+}
+input[type="checkbox"]{display: none;}
+input[type="checkbox"] + label{display: inline-block;width: 20px !important;height: 20px;border;position: relative;margin-right: 15px;background-image: url(../images/checkbox_off.png);cursor: pointer;}
+input[type="checkbox"]:checked + label:after{
+    content:"";width: 20px;height: 20px;background: var(--color1);display: block;background-image: url(../images/checkbox_on.png);
+}
+
+
+button.bbsBtn{display: block;border: 1px solid #e0e0e0;background: white;height: 50px;text-align: center;padding: 13px 20px 20px 20px;cursor:pointer}
+button.bbsBtn.black{background: #000;color:white;border: 0 none;}
+button.bbsBtn.gray{background: #333;color:white;border: 0 none;}
+button.bbsBtn.primary{background:var(--color1);color:white;border: 1px solid var(--color1);}
