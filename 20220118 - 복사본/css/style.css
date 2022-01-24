@@ -1,0 +1,108 @@
+@charset 'utf-8';
+
+/* main  */
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body{
+    min-width: 1200px
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height:100%
+}
+
+.headerWrap{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* container */
+
+.container{
+    flex:1 auto;
+    display: flex;
+}
+.container>div{
+    flex:1;
+    cursor: pointer;
+   
+}
+.container div.left{
+    background:var(--gray1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container div.right{
+    background: #dee5eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{text-align: center; width: 420px;}
+.card img{
+    display: block;margin: 0 auto;
+    margin-bottom: 3em;
+}
+
+.card_body h3{font-size: 54px;line-height: 72px;font-weight: 500;}
+.card_body p{font-size: 54px;line-height: 72px;}
+.card_body .btn{
+    display: block;
+    font-size: 24px;
+    width: 180px;height: 66px;
+    background: #fff;
+    text-align: center;
+    border-radius: 33px;
+    line-height: 66px;
+    margin: 0 auto
+}
+
+.container>div .img{width: 80px;height: 80px;margin: 0 auto;background-repeat: no-repeat;background-position: center;}
+.container>div .img img{display: none;}
+
+.container div.left .img{background-image: url(../images/main_icon01_off.png);}
+.container div.left:hover .img{background-image: url(../images/main_icon01_on.png);}
+
+.container> div:hover{background: var(--color1);}
+.container> div:hover .btn{color: var(--color1);}
+.container> div:hover h3{color: var(--color4);}
+.container> div:hover p{color:white;}
+
+.container div.right .img{background-image: url(../images/main_icon02_off.png);}
+.container div.right:hover .img{background-image: url(../images/main_icon02_on.png);}
+
+/* .container div.right:hover{background: var(--color1);}
+.container div.right:hover .btn{color: var(--color1);}
+.container div.right:hover h3{color: var(--color4);}
+.container div.right:hover p{color:white;} */
+
+
+/* footer */
+
+.footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer address{
+    font-style: normal;
+    text-align: center;
+    font-size: 14px;
+    color:#767676;
+    line-height: 22px;
+}
+
+
+
