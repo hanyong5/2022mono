@@ -220,7 +220,7 @@ body{
 
 
 
-/* search bbs view */
+/* search bbs view  confirm01*/
 
 .container.confirm01 .titleWrap{padding: 60px 40px;border-top: 2px solid #000;}
 .container.confirm01 .title{margin-bottom: 28px;}
@@ -323,6 +323,13 @@ body{
 .container.confirm_write .fieldWrap{border-top: 2px solid #000;border-bottom: 2px solid var(--gray3);padding: 60px 40px;}
 .container.confirm_write .fieldWrap.bnone{border-top: 0 none;}
 .container.confirm_write .field{display: flex;align-items:center;}
+.container.confirm_write .field .cell{display: flex;align-items:center;}
+.container.confirm_write .field .cell input.inp2cell{width: 400px;}
+.container.confirm_write .field.inp1cell  input{flex:1}
+.container.confirm_write .field .selectWrap{display: flex;;flex:1}
+.container.confirm_write .field .selectWrap .subject{width: 400px;margin-left:10px;}
+/* .container.confirm_write .field .inp.subject{flex:1} */
+
 .container.confirm_write .field label{width: 165px;font-weight: 500;}
 .container.confirm_write .field label .sub{display: block;font-size: 12px;color:#767676}
 .container.confirm_write .field .red{font-size: 12px;color:#ff3535;margin-left: 10px;}
@@ -339,6 +346,7 @@ form fieldset{border: 0 none;}
 .inp.w300{width: 300px !important;}
 .inp.w400{width: 400px !important;}
 .inp.w250{width: 250px !important;}
+.inp.w200{width: 200px !important;}
 .inp.w150{width: 150px !important;}
 .inp.w750{width: 750px !important;}
 .inp.w100{width: 100% !important;}
@@ -415,6 +423,33 @@ button.bbsBtn.primary{background:var(--color1);color:white;border: 1px solid var
 .container.confirm .table colgroup col:nth-child(4){width: 180px;}
 .container.confirm .table colgroup col:nth-child(5){width: 140px;}
 
+/* confirm01 */
+.container.confirm01 .conMenuWrap li{
+    margin-right: 15px;width:calc( ( 100% - 30px ) / 3 );
+    padding:20px;display: initial;height:280px
+    
+}
 
+
+/* confirmOk table */
+
+.container.confirmOk .table colgroup col:nth-child(1){width: 45px;}
+.container.confirmOk .table colgroup col:nth-child(2){width: 120px;}
+.container.confirmOk .table colgroup col:nth-child(3){width: 100px;}
+.container.confirmOk .table colgroup col:nth-child(5){width: 180px;}
+.container.confirmOk .table colgroup col:nth-child(6){width: 120px;}
+
+/* confirm write  */
+.container.confirm_write .field{display:initial;}
+.container.confirm_write .field label{width: 130px}
+.container.confirm_write .field .wall{display: none;}
+.container.confirm_write .field .cell{margin-bottom: 20px;}
+.container.confirm_write .field .cell input.inp2cell{}
+.container.confirm_write .field.inp1cell{display: flex;}
+.container.confirm_write .field.inp1cell input.inp{}
+.container.confirm_write .field.etc1{display: flex;}
+
+.container.confirm_write .field .selectWrap{display: flex;flex-direction: column;}
+.container.confirm_write .field .selectWrap .subject{width: 400px;margin-left:0px;margin-top: 10px;}
 
 }

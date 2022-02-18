@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질병관리청</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/view.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    
+    <div class="wrap">
+        <header class="headerWrap">
+            <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">유전자변형생물체 소개</a></li>
+                    <li><a href="#">생물안전∙생물보안 사고·접수</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn">로그인</a>
+        </header>
+        <!-- container  -->
+        <div class="container confirm_write m-auto f-1 mb10">
+            <h3 class="t-center mb6">개발·실험 LMO 실험 승인</h3>
+            <!-- contents  -->
+            <div class="contents">
+                <form action="#" method="post">
+                    <fieldset class="mb6">
+                        <legend class="mb3">신청인 - 시험연구 기관</legend>
+                        <div class="fieldWrap">
+                            <div class="field mb4">
+                                <div class="cell">
+                                    <label for="company">상호</label>
+                                    <input type="text" class="inp inp2cell" placeholder="상호" name="company" id="company">
+                                </div>
+                                <div class="wall"></div>
+                                <div class="cell">
+                                    <label for="com-code">사업자등록번호<span class="sub">법인등록번호</span></label>
+                                    <input type="text" class="inp inp2cell" placeholder="사업자등록번호" name="com-code" id="com-code">
+                                </div>
+                            </div>
+                            <div class="field mb4">
+                                <div class="cell">
+                                    <label for="com-name">대표자 성명</label>
+                                    <input type="text" class="inp inp2cell" placeholder="대표자 성명" name="com-name" id="com-name">
+                                </div>
+                                <div class="wall"></div>
+                                <div class="cell">
+                                    <label for="tel-number">전화번호</label>
+                                    <input type="text" class="inp inp2cell" placeholder="전화번호" name="tel-number" id="tel-number">
+                                </div>
+                            </div>
+                            <div class="field mb4 inp1cell">
+                                
+                                    <label for="com-address">사업장주소</label>
+                                    <input type="text" class="inp " placeholder="사업장주소" name="com-address" id="com-address">
+                                
+                                
+                            </div>
+                            <div class="field mb4 etc1">
+                                <label for="com-subject">과제명</label>
+                                <div class="selectWrap">
+                                    <select name="com-subject-select" id="" class="inp w250 select">
+                                        <option value="">선택</option>
+                                        <option value="">선택</option>
+                                        <option value="">선택</option>
+                                    </select>
+                                    
+                                    <input type="text" class="inp subject" placeholder="과제명" name="com-subject" id="com-subject">
+                                </div>
+                                
+                            </div>
+                            <div class="field inp1cell">
+                                <label for="com-date1">연구기간</label>
+                                <input type="text" class="inp w250 date" placeholder="2022.01.18" name="com-date1" id="com-date1">
+                                &nbsp&nbsp~&nbsp&nbsp
+                                <input type="text" class="inp w250 date" placeholder="연구기간 (YYYY.MM.DD)" name="com-date2" id="com-date2">
+                            </div>
+                            
+                        </div>
+                    </fieldset>
+                    <fieldset class="mb6">
+                        <legend class="mb3">연구책임자</legend>
+                        <div class="fieldWrap">
+                            <div class="field mb4">
+                                <div class="cell">
+                                    <label for="pi-name">성명</label>
+                                    <input type="text" class="inp w400" placeholder="성명" name="pi-name" id="pi-name">
+                                </div>
+                                <div class="wall"></div>
+                                <div class="cell">
+                                    <label for="pi-desk">직위</label>
+                                    <input type="text" class="inp w400" placeholder="직위" name="pi-desk" id="pi-desk">
+                                </div>
+                            </div>
+                            <div class="field mb4">
+                                <div class="cell">
+                                    <label for="pi-email">전자메일 주소</label>
+                                    <input type="text" class="inp w400" placeholder="전자메일 주소 ex) email@email.com" name="pi-email" id="pi-email">
+                                </div>
+                                <div class="wall"></div>
+                                <div class="cell">
+                                    <label for="pi-tel-number">전화번호</label>
+                                    <input type="text" class="inp w400" placeholder="전화번호" name="pi-tel-number" id="pi-tel-number">
+                                </div>
+                            </div>
+                            <div class="field inp1cell">
+                                <label for="pi-address">주소</label>
+                                <input type="text" class="inp" placeholder="주소" name="pi-address" id="pi-address">
+                                
+                            </div>
+                            
+                            
+                        </div>
+                    </fieldset>
+                    <fieldset class="mb6">
+                        <legend class="mb3">연구시설</legend>
+                        <div class="fieldWrap">
+                            <div class="field mb4">
+                                <div class="cell">
+                                    <label for="con-num">허가번호<span class="sub">신고확인번호</span></label>
+                                    <input type="text" class="inp w400" placeholder="허가번호(신고확인번호)" name="con-num" id="con-num">
+                                </div>
+                                <div class="wall"></div>
+                                <div class="cell">
+                                    <label for="co-safe">안전관리등급</label>
+                                    <input type="text" class="inp w400" placeholder="안전관리등급" name="co-safe" id="co-safe">
+                                </div>
+                            </div>
+                            
+                            <div class="field inp1cell">
+                                <label for="co-address">주소</label>
+                                <input type="text" class="inp flex1" placeholder="주소" name="co-address" id="co-address">
+                                
+                            </div>
+                            
+                            
+                        </div>
+                    </fieldset>
+                    <fieldset class="mb6">
+                        <legend class="mb3">생물안전관리책임자</legend>
+                        <div class="fieldWrap">
+                            <div class="field">
+                                <div class="cell">
+                                    <label for="safe-num">성명</label>
+                                    <input type="text" class="inp w400" placeholder="성명" name="safe-num" id="safe-num">
+                                </div>
+                                <div class="wall"></div>
+                                <div class="cell">
+                                    <label for="safe-com">소속</label>
+                                    <input type="text" class="inp w400" placeholder="소속" name="safe-com" id="safe-com">
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="mb3">심사요청사항 - 해당사항에 모두 체크 해주세요.</legend>
+                        <div class="fieldWrap">
+                            <div class="field mb2">
+                                <input type="checkbox" class="checkbox" id="chk1" class="check"> <label for="chk1"></label> 
+                                종명(種名)까지 명시되어 있지 아니하고 인체병원성 여부가 밝혀지지 아니한 미생물을 이용
+                            </div>
+                            <div class="field mb2">
+                                <input type="checkbox" class="checkbox" id="chk2" class="check"> <label for="chk2"></label> 
+                                척추동물에 대하여 보건복지부장관이 고시하는 기준 이상의 단백성 독소를 생산할 능력을 가진 유전자를 이용
+                                
+                            </div>
+                            <div class="field mb2">
+                                <input type="checkbox" class="checkbox" id="chk3" class="check"> <label for="chk3"></label> 
+                                자연적으로 발생하지 아니하는 방식으로 생물체에 약제내성 유전자를 의도적으로 전달 
+                                <span class="red">* 보건복지부장관이 안전하다고 인정하여 고시하는 경우는 제외됩니다. </span>
+                            </div>
+                            <div class="field mb2">
+                                <input type="checkbox" class="checkbox" id="chk4" class="check"> <label for="chk4"></label> 
+                                국민보건상 국가관리가 필요하다고 보건복지부장관이 고시하는 병원미생물을 이용
+                            </div>
+                            <div class="field mb2">
+                                <input type="checkbox" class="checkbox" id="chk5" class="check"> <label for="chk5"></label> 
+                                포장시험(圃場試驗) 등 환경방출과 관련된 실험
+                            </div>
+                            <div class="field">
+                                <input type="checkbox" class="checkbox" id="chk6" class="check"> <label for="chk6"></label> 
+                                그 밖에 국가책임기관의 장이 바이오안전성위원회의 심의를 거쳐 위해가능성이 크다고 인정하여 고시한 유전자변형생물체의 개발 또는 실험
+                            </div>
+
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset>
+                        <div class="fieldWrap bnone">
+                            <div class="field">
+                                <div class="cell">
+                                    <label for="reg-date">신청일</label>
+                                    <input type="text" class="inp w400 date" placeholder="신청일 (YYYY.MM.DD)" name="reg-date" id="reg-date">
+                                </div>
+                                <div class="wall"></div>
+                                <div class="cell">
+                                    <label for="reg-name">신청인</label>
+                                    <input type="text" class="inp w400" placeholder="신청인" name="reg-name" id="reg-name">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="conformWrap">
+                        <div class="conform">
+                            <button type="button" class="bbsBtn mr1 modal">보완요청</button>
+                            <button type="button" class="bbsBtn primary" onclick="location.href='confirm02.html'">승인하기</button>
+                        </div>
+                    </div>
+                </form>
+
+
+
+            </div>
+            <!-- contents  --> 
+        </div>
+
+        <footer class="footerWrap">
+            <div class="footer">
+                <div class="clogo"><img src="images/c_logo.png" alt=""></div>
+                <div class="copyWrap">
+                    <nav class="cNav">
+                        <ul>
+                            <li><a href="#">이용안내</a></li>
+                            <li><div class="bar"></div></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><div class="bar"></div></li>
+                            <li><a href="#">저자권정책</a></li>
+                        </ul>
+        
+                    </nav>
+                    <address>
+                        (28159) 충북 청주시 흥덕구 오송읍 오송생명2로 187 오송보건의료행정타운내 질병관리청<br>COPYRIGHT © 2019 질병관리청 ALL RIGHTS RESERVED.
+                    </address>
+                </div>
+                <div class="co">관련사이트 바로가기</div>
+            </div>
+        </footer>
+    </div>
+    
+	<!-- modal  -->
+<div class="modalbg"></div>
+<div class="modalView confirm">
+    <div class="titleWrap mb3">
+        <h5>보완사유</h5>
+        <a href="#" onclick="modalClose()"><img src="images/icon_close.png" alt=""></a>
+    </div>
+    <div>
+        <textarea name="" id="" cols="30" rows="10" style="width: 100%;font-size: 14px;padding:20px">상세사유를 적어주세요</textarea>
+    </div>
+    <div class="mdalBtnWrap">
+        <ul>
+            <li><a href="javascript:void(0)" class="bbsBtn">최소</a></li>
+            <li><a href="confirm02.html" class="bbsBtn primary">등록하기</a></li>
+        </ul>
+    </div>
+    
+</div>
+<script>
+
+    //modal
+    const modal1 = document.querySelector(".modal");
+           const modalbg = document.querySelector(".modalbg");
+           const modalView1 = document.querySelector(".modalView");
+   
+           modal1.addEventListener("click",function(event){
+               event.preventDefault()
+               modalView1.style.display="block"
+               modalbg.style.display="block"
+           })
+           function modalClose(){
+               event.preventDefault()
+               modalView1.style.display="none"
+               modalbg.style.display="none"
+           }
+   
+   </script>
+</body>
+</html>
