@@ -272,7 +272,7 @@ body{
 .container.reWrite .selectView1{display: flex;visibility: hidden;}
 .container.reWrite .lmoViewWrap>div{display: none;}
 
-.container.reWrite .checkView{display: flex;height: 50px;align-items: ;}
+.container.reWrite .checkView{display: flex;height: 50px;align-items: center;}
 .container.reWrite .checkView .txt{display: flex;align-items: center;padding-right: 20px;}
 .container.reWrite .checkView  .chebox-item{display: flex;align-items: center;}
 .container.reWrite .checkView  .chebox-item p{padding-right: 30px;}
@@ -360,7 +360,7 @@ form fieldset{border: 0 none;}
     
 }
 input[type="checkbox"]{display: none;}
-input[type="checkbox"] + label{display: inline-block;width: 20px !important;height: 20px;border;position: relative;margin-right: 15px;background-image: url(../images/checkbox_off.png);cursor: pointer;}
+input[type="checkbox"] + label{display: inline-block;width: 20px !important;height: 20px;position: relative;margin-right: 15px;background-image: url(../images/checkbox_off.png);cursor: pointer;}
 input[type="checkbox"]:checked + label:after{
     content:"";width: 20px;height: 20px;background: var(--color1);display: block;background-image: url(../images/checkbox_on.png);
 }
