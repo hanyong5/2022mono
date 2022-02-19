@@ -36,36 +36,46 @@
                         <legend class="mb3">신청인 - 시험연구 기관</legend>
                         <div class="fieldWrap">
                             <div class="field mb4">
-                                <label for="company">상호</label>
-                                <input type="text" class="inp w400" placeholder="상호" name="company" id="company">
+                                <div class="cell">
+                                    <label for="company">상호</label>
+                                    <input type="text" class="inp w400" placeholder="상호" name="company" id="company">
+                                </div>
                                 <div class="wall"></div>
-                                <label for="com-code">사업자등록번호<span class="sub">법인등록번호</span></label>
-                                <input type="text" class="inp w400" placeholder="사업자등록번호" name="com-code" id="com-code">
+                                <div class="cell">
+                                    <label for="com-code">사업자등록번호<span class="sub">법인등록번호</span></label>
+                                    <input type="text" class="inp w400" placeholder="사업자등록번호" name="com-code" id="com-code">
+                                </div>
                             </div>
                             <div class="field mb4">
-                                <label for="com-name">대표자 성명</label>
-                                <input type="text" class="inp w400" placeholder="대표자 성명" name="com-name" id="com-name">
+                                <div class="cell">
+                                    <label for="com-name">대표자 성명</label>
+                                    <input type="text" class="inp w400" placeholder="대표자 성명" name="com-name" id="com-name">
+                                </div>
                                 <div class="wall"></div>
-                                <label for="tel-number">전화번호</label>
-                                <input type="text" class="inp w400" placeholder="전화번호" name="tel-number" id="tel-number">
+                                <div class="cell">
+                                    <label for="tel-number">전화번호</label>
+                                    <input type="text" class="inp w400" placeholder="전화번호" name="tel-number" id="tel-number">
+                                </div>
                             </div>
-                            <div class="field mb4">
+                            <div class="field mb4 inp1cell">
                                 <label for="com-address">사업장주소</label>
-                                <input type="text" class="inp flex1" placeholder="사업장주소" name="com-address" id="com-address">
+                                <input type="text" class="inp" placeholder="사업장주소" name="com-address" id="com-address">
                                 
                             </div>
-                            <div class="field mb4">
+                            <div class="field mb4 etc1">
                                 <label for="com-subject">과제명</label>
-                                <select name="com-subject-select" id="" class="inp w250 select">
-                                    <option value="">선택</option>
-                                    <option value="">선택</option>
-                                    <option value="">선택</option>
-                                </select>
-                                <div class="wall"></div>
-                                <input type="text" class="inp w750" placeholder="과제명" name="com-subject" id="com-subject">
+                                <div class="selectWrap">
+                                    <select name="com-subject-select" id="" class="inp w250 select">
+                                        <option value="">선택</option>
+                                        <option value="">선택</option>
+                                        <option value="">선택</option>
+                                    </select>
+                                    
+                                    <input type="text" class="inp subject" placeholder="과제명" name="com-subject" id="com-subject">
+                                </div>
                                 
                             </div>
-                            <div class="field">
+                            <div class="field inp1cell">
                                 <label for="com-date1">연구기간</label>
                                 <input type="text" class="inp w250 date" placeholder="2022.01.18" name="com-date1" id="com-date1">
                                 &nbsp&nbsp~&nbsp&nbsp
@@ -78,22 +88,30 @@
                         <legend class="mb3">연구책임자</legend>
                         <div class="fieldWrap">
                             <div class="field mb4">
-                                <label for="pi-name">성명</label>
-                                <input type="text" class="inp w400" placeholder="성명" name="pi-name" id="pi-name">
+                                <div class="cell">
+                                    <label for="pi-name">성명</label>
+                                    <input type="text" class="inp w400" placeholder="성명" name="pi-name" id="pi-name">
+                                </div>
                                 <div class="wall"></div>
-                                <label for="pi-desk">직위</label>
-                                <input type="text" class="inp w400" placeholder="직위" name="pi-desk" id="pi-desk">
+                                <div class="cell">
+                                    <label for="pi-desk">직위</label>
+                                    <input type="text" class="inp w400" placeholder="직위" name="pi-desk" id="pi-desk">
+                                </div>
                             </div>
                             <div class="field mb4">
-                                <label for="pi-email">전자메일 주소</label>
-                                <input type="text" class="inp w400" placeholder="전자메일 주소 ex) email@email.com" name="pi-email" id="pi-email">
+                                <div class="cell">
+                                    <label for="pi-email">전자메일 주소</label>
+                                    <input type="text" class="inp w400" placeholder="전자메일 주소 ex) email@email.com" name="pi-email" id="pi-email">
+                                </div>
                                 <div class="wall"></div>
-                                <label for="pi-tel-number">전화번호</label>
-                                <input type="text" class="inp w400" placeholder="전화번호" name="pi-tel-number" id="pi-tel-number">
+                                <div class="cell">
+                                    <label for="pi-tel-number">전화번호</label>
+                                    <input type="text" class="inp w400" placeholder="전화번호" name="pi-tel-number" id="pi-tel-number">
+                                </div>
                             </div>
-                            <div class="field">
+                            <div class="field inp1cell">
                                 <label for="pi-address">주소</label>
-                                <input type="text" class="inp flex1" placeholder="주소" name="pi-address" id="pi-address">
+                                <input type="text" class="inp" placeholder="주소" name="pi-address" id="pi-address">
                                 
                             </div>
                             
@@ -104,14 +122,18 @@
                         <legend class="mb3">연구시설</legend>
                         <div class="fieldWrap">
                             <div class="field mb4">
-                                <label for="con-num">허가번호<span class="sub">신고확인번호</span></label>
-                                <input type="text" class="inp w400" placeholder="허가번호(신고확인번호)" name="con-num" id="con-num">
+                                <div class="cell">
+                                    <label for="con-num">허가번호<span class="sub">신고확인번호</span></label>
+                                    <input type="text" class="inp w400" placeholder="허가번호(신고확인번호)" name="con-num" id="con-num">
+                                </div>
                                 <div class="wall"></div>
-                                <label for="co-safe">안전관리등급</label>
-                                <input type="text" class="inp w400" placeholder="안전관리등급" name="co-safe" id="co-safe">
+                                <div class="cell">
+                                    <label for="co-safe">안전관리등급</label>
+                                    <input type="text" class="inp w400" placeholder="안전관리등급" name="co-safe" id="co-safe">
+                                </div>
                             </div>
                             
-                            <div class="field">
+                            <div class="field inp1cell">
                                 <label for="co-address">주소</label>
                                 <input type="text" class="inp flex1" placeholder="주소" name="co-address" id="co-address">
                                 
@@ -124,11 +146,15 @@
                         <legend class="mb3">생물안전관리책임자</legend>
                         <div class="fieldWrap">
                             <div class="field">
-                                <label for="safe-num">성명</label>
-                                <input type="text" class="inp w400" placeholder="성명" name="safe-num" id="safe-num">
+                                <div class="cell">
+                                    <label for="safe-num">성명</label>
+                                    <input type="text" class="inp w400" placeholder="성명" name="safe-num" id="safe-num">
+                                </div>
                                 <div class="wall"></div>
-                                <label for="safe-com">소속</label>
-                                <input type="text" class="inp w400" placeholder="소속" name="safe-com" id="safe-com">
+                                <div class="cell">
+                                    <label for="safe-com">소속</label>
+                                    <input type="text" class="inp w400" placeholder="소속" name="safe-com" id="safe-com">
+                                </div>
                             </div>
                             
                             
@@ -172,11 +198,15 @@
                     <fieldset>
                         <div class="fieldWrap bnone">
                             <div class="field">
-                                <label for="reg-date">신청일</label>
-                                <input type="text" class="inp w400 date" placeholder="신청일 (YYYY.MM.DD)" name="reg-date" id="reg-date">
+                                <div class="cell">
+                                    <label for="reg-date">신청일</label>
+                                    <input type="text" class="inp w400 date" placeholder="신청일 (YYYY.MM.DD)" name="reg-date" id="reg-date">
+                                </div>
                                 <div class="wall"></div>
-                                <label for="reg-name">신청인</label>
-                                <input type="text" class="inp w400" placeholder="신청인" name="reg-name" id="reg-name">
+                                <div class="cell">
+                                    <label for="reg-name">신청인</label>
+                                    <input type="text" class="inp w400" placeholder="신청인" name="reg-name" id="reg-name">
+                                </div>
                             </div>
                         </div>
                     </fieldset>

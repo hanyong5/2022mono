@@ -45,11 +45,11 @@
                                     <select name="info" id="info" class="inp  w250">
                                         <option value="v1">Avian influenza virus H7N9</option>
                                     </select>
-                                    <a href="javasript:void(0)" class="bbsBtn black">선택</a>
+                                    <a href="#" class="bbsBtn black">선택</a>
                                 </div>
                                 <div class="btnWrap">
-                                    <a href="javasript:void(0)" class="bbsBtn gray mr1 modal">기본정보출력</a>
-                                    <a href="javasript:void(0)" class="bbsBtn gray">관계법령출력</a>
+                                    <a href="#" class="bbsBtn gray mr1 modal">기본정보출력</a>
+                                    <a href="#" class="bbsBtn gray">관계법령출력</a>
                                 </div>
                             </div>
                             <div class="field mb4">
@@ -390,7 +390,7 @@
         }
 
         function selectClick(){
-            let selView = lmoSelect.selectedIndex
+            let selView = lmoSelect.selectedIndex;
             const selTextView = document.querySelector(".aniViewTxt");
             console.log(selView)
             if(selView == 1){
