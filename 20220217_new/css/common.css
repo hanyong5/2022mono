@@ -5,10 +5,12 @@
     --color2: #0e409f;
     --color3: #05bec5;
     --color4: #fff13f;
+    --color5: #ED1A3B;
     --gray1: #f0f2f4;
     --gray2: #dee5eb;
     --gray3: #e0e0e0;
     --gray4: #eee;
+    --fcolor1: #333;
     --active1: #000;
   }
   
@@ -52,6 +54,6 @@
 
 @media screen and (max-width:1024px){
   h3{font-size: 40px;font-weight: 400;}
-  h4{font-size: 28px;font-weight: 400;}
+  h4{font-size: 18px;font-weight: 400;}
   h5{font-size: 20px;font-weight: 400;}
 }

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질병관리청</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/view.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+    
+    <div class="wrap">
+        <header class="headerWrap">
+            <h1><a href="../index.html"><img src="../images/logo.png" alt=""></a></h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">유전자변형생물체 소개</a></li>
+                    <li><a href="#">생물안전∙생물보안 사고·접수</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn">로그인</a>
+        </header>
+        <!-- container  -->
+        <div class="container claimWrite02 m-auto f-1 mb10">
+            <h3 class="t-center">생물안전 3등급 시설 설치·운영 정기 현장점검표</h3>
+            <p class="t-center mb6">동물/대량포함</p>
+            <!-- contents  -->
+            <div class="contents">
+                <form action="#" method="post">
+                    <fieldset class="mb6">
+                        <legend class="mb3">점검개요</legend>
+                        <div class="fieldWrap">
+                            <div class="field mb5">
+                                <div class="cell1">
+                                    <label for="company">운영기관</label>
+                                    <input type="text" class="inp" placeholder="운영기관명" name="company" id="company">
+                                </div>
+                                <!-- <div class="wall"></div> -->
+                                <div class="cell1">
+                                    <label for="com-code">설치∙운영 장소</label>
+                                    <input type="text" class="inp" placeholder="설치운영 장소" name="com-code" id="com-code">
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="field cellView mb4">
+                                
+                                <div class="fTitle">시설내역</div>
+                                
+                                <div class="cellWrap">
+                                    <div class="cell2 mb4">
+                                    
+                                        <div class="checkWrap">
+                                            <input type="checkbox" class="chk1" name="chk1" id="chk1">
+                                            <label for="chk1">일  반</label>
+                                        </div>
+                                        <div class="checkWrap">
+                                            <input type="checkbox" class="chk2" name="chk2" id="chk2">
+                                            <label for="chk2">대량배양</label>
+                                        </div>
+                                        <div class="checkWrap">
+                                            <input type="checkbox" class="chk3" name="chk3" id="chk3">
+                                            <label for="chk3">동 물</label>
+                                        </div>
+                                        <div class="checkWrap">
+                                            <input type="checkbox" class="chk4" name="chk4" id="chk4">
+                                            <label for="chk4">식 물</label>
+                                        </div>
+                                        <div class="checkWrap">
+                                            <input type="checkbox" class="chk5" name="chk5" id="chk5">
+                                            <label for="chk5">곤 충</label>
+                                        </div>
+                                    
+                                    </div>
+                                    
+                                    <div class="cell2 column">
+                                        <div class="checkWrap2">
+                                            <div class="checkWrap">
+                                                <input type="checkbox" class="chk6" name="chk6" id="chk6">
+                                                <label for="chk6">연구시설</label>
+                                            </div>
+                                            <div class="checkWrap">
+                                                <input type="checkbox" class="chk7" name="chk7" id="chk7">
+                                                <label for="chk7">소위험병원체 취급시설</label>
+                                            </div>
+                                        </div>
+                                        <div class="inpWrap">
+                                            <div class="cell3 mb3">
+                                                <label for="conNum">허가번호</label>
+                                                <input type="text" class="inp" placeholder="허가번호" name="conNum" id="conNum">
+                                            </div>
+                                            <div class="cell3">
+                                                <label for="conDage">최초허가일</label>
+                                                <input type="date" class="inp"  name="conDage" id="conDage">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="field column">
+                                <div class="cell4 mb4">
+                                    <div class="fTitle">구분</div>
+                                    <div class="flex1">생물안전관리책임자</div>
+                                    <div class="flex1">생물안전관리자</div>
+                                    <div class="flex1">고위험병원체의전담관리자</div>
+                                </div>
+                                <div class="cell4 mb4">
+                                    <div class="fTitle">성명</div>
+                                    <div class="flex1"><input type="text" name="" placeholder="책임자성명" class="inp"></div>
+                                    <div class="flex1"><input type="text" name="" placeholder="관리자성명" class="inp"></div>
+                                    <div class="flex1"><input type="text" name="" placeholder="전담관리자성명" class="inp"></div>
+                                </div>
+                                <div class="cell4 mb4">
+                                    <div class="fTitle">연락처</div>
+                                    <div class="flex1"><input type="text" name="" placeholder="책임자연락처" class="inp"></div>
+                                    <div class="flex1"><input type="text" name="" placeholder="관리자연락처" class="inp"></div>
+                                    <div class="flex1"><input type="text" name="" placeholder="전담관리자연락처" class="inp"></div>
+                                </div>
+                                <div class="cell4 mb4">
+                                    <div class="fTitle">점검자</div>
+                                    <div class="flex1"><input type="text" name="" placeholder="점검자성명" class="inp"></div>
+                                    <div class="flex1">점검일자</div>
+                                    <div class="flex1"><input type="date" name="" placeholder="전담관리자성명" class="inp"></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="mb6">
+                        <legend class="mb3">취급병원체 정보</legend>
+                        <div class="plus btn cellAdd">추가</div>
+                        <div class="fieldWrap">
+                            <div class="field mb5 column">
+                                <div class="cell4 mb3">
+                                    <div class="flex1">병원체명</div>
+                                    <div class="flex1">주요실험방법</div>
+                                    <div class="lastCell"></div>
+                                </div>
+                                <div class="cell4 mb3">
+                                    <div class="flex1"><input type="text" class="inp" placeholder="병원체명"></div>
+                                    <div class="flex1"><input type="text" class="inp" placeholder="주요실험방법"></div>
+                                    <div class="lastCell"></div>
+                                </div>
+                                <div class="addView">
+                                    <!-- <div class="cell4">
+                                        <div class="flex1"><input type="text" class="inp" placeholder="병원체명"></div>
+                                        <div class="flex1"><input type="text" class="inp" placeholder="주요실험방법"></div>
+                                        <div class="lastCell"><div class="minor btn">삭제</div></div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text">* 본 현장 점검은 귀 기관 생물안전 3등급 시설의 정상 가동시 설치·운영 현황을 점검함을 알려 드립니다. </p>
+                                <p class="text blue">* 본 현장 점검 완료 후 개선이 필요한 항목이 있을 경우에는 해당 항목을 조치하신 뒤 공문으로 회신(`21.10.30.까지)해 주시기 바랍니다.</p>
+
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="mb6">
+                        <legend >세부점검사항</legend>
+                        <p class="mb3">1. 밀폐구역 설비 가동성 확인(유지관리보고서 또는 필드확인)</p>
+                        <div class="fieldWrap mb5">
+                            <div class="field mb5 column">
+                                <div class="cell5">
+                                    <div class="no">NO</div>
+                                    <div class="flex1">점검내용</div>
+                                    <div class="sfield">선택</div>
+                                    <div class="etc">비고</div>
+                                </div>
+                                <div class="cell5">
+                                    <div class="no co">1.1</div>
+                                    <div class="flex1 liContent">
+                                        <p class="pro">주출입구 잠금장치 및 보안장치가 적절히 설치‧운영되고 있는가? </p>
+                                        <p class="li0">
+                                            주출입구 잠금장치가 설치되어 있지 않으며 CCTV가 설치되지 않은 실험실이 존재함.
+                                        </p>
+                                        <p class="li1">
+                                            주출입구 잠금장치가 설치되어 있으며 CCTV가 설치되지 않은 실험실이 존재함.
+                                        </p>
+                                        <p class="li3">
+                                            주출입구 잠금장치가 설치되어 있으며 모든 실험실에 CCTV가 설치됨. CCTV 영상자료의 3개월치 저장이 불가능함.
+                                        </p>
+                                        <p class="li5">
+                                            주출입구 잠금장치가 설치되어 있으며 모든 실험실에 CCTV가 설치됨. CCTV 영상자료의 3개월치 저장이 가능함.
+                                        </p>
+
+                                    </div>
+                                    <div class="sfield raCell">
+                                        <input type="radio" id="r01_01" name="r01_01" checked>
+                                        <input type="radio" id="r01_02" name="r01_01">
+                                        <input type="radio" id="r01_03" name="r01_01">
+                                        <input type="radio" id="r01_04" name="r01_01">
+
+                                        <label for="r01_01" class="rBtn b1">5</label>
+                                        <label for="r01_02" class="rBtn b2">3</label>
+                                        <label for="r01_03" class="rBtn b3">1</label>
+                                        <label for="r01_04" class="rBtn b4">0</label>
+
+                                    </div>
+                                    <div class="etc">비고</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="mb3">2. 생물안전장비 가동성 확인(보고서 또는 필드 확인)</p>
+                        <div class="fieldWrap">
+                            <div class="field mb5 column">
+                            </div>
+                        </div>
+                    </fieldset>
+                   
+                    
+                    
+
+
+                    <fieldset>
+                        <div class="fieldWrap bnone">
+                            <div class="field">
+                                <div class="cell">
+                                    <label for="reg-date">신청일</label>
+                                    <input type="text" class="inp w400 date" placeholder="신청일 (YYYY.MM.DD)" name="reg-date" id="reg-date">
+                                </div>
+                                <div class="wall"></div>
+                                <div class="cell">
+                                    <label for="reg-name">신청인</label>
+                                    <input type="text" class="inp w400" placeholder="신청인" name="reg-name" id="reg-name">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="conformWrap">
+                        <div class="conform">
+                            <button type="button" class="bbsBtn mr1">임시저장</button>
+                            <button type="button" class="bbsBtn primary" onclick="location.href='confirm04.html'">등록하기</button>
+                        </div>
+                    </div>
+                </form>
+
+
+
+            </div>
+            <!-- contents  --> 
+        </div>
+
+        <footer class="footerWrap">
+            <div class="footer">
+                <div class="clogo"><img src="../images/c_logo.png" alt=""></div>
+                <div class="copyWrap">
+                    <nav class="cNav">
+                        <ul>
+                            <li><a href="#">이용안내</a></li>
+                            <li><div class="bar"></div></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><div class="bar"></div></li>
+                            <li><a href="#">저자권정책</a></li>
+                        </ul>
+        
+                    </nav>
+                    <address>
+                        (28159) 충북 청주시 흥덕구 오송읍 오송생명2로 187 오송보건의료행정타운내 질병관리청<br>COPYRIGHT © 2019 질병관리청 ALL RIGHTS RESERVED.
+                    </address>
+                </div>
+                <div class="co">관련사이트 바로가기</div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script>
+        let num = 1;
+        let num1 = 1;
+        // let addTxt = ` <div class="cell4 mb3">
+        //                 <div class="flex1"><input type="text" class="inp" placeholder="병원체명"></div>
+        //                 <div class="flex1"><input type="text" class="inp" placeholder="주요실험방법"></div>
+        //                 <div class="lastCell"><div class="minor btn">삭제${num++}</div></div>
+        //                </div>`;
+
+        const cBtn = document.querySelector(".cellAdd");
+        const cAdd = document.querySelector(".addView");
+        const dellBtn = document.querySelector(".minor");
+        
+        cBtn.addEventListener("click",function(){
+            cAdd.innerHTML += ` <div class="cell4 mb3">
+                        <div class="flex1"><input type="text" class="inp" placeholder="병원체명${num++}" ></div>
+                        <div class="flex1"><input type="text" class="inp" placeholder="주요실험방법${num1++}"></div>
+                        <div class="lastCell"><div class="minor btn">삭제</div></div>
+                       </div>`;
+           
+        })
+
+        cAdd.addEventListener('click',function(event){
+            if (event.target != event.curentTarget) {
+                console.log(event.target.classList.value)
+                var tgt = event.target;
+                var div = tgt.parentElement.parentElement;
+                console.log(div)
+                if(event.target.classList.value != "inp"){
+                   cAdd.removeChild(div);
+                }
+            }
+            event.stopPropagation();
+            num--;
+            num1--;
+
+
+        },false)
+        
+
+    </script>
+    
+</body>
+</html>

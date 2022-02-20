@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Shopping List</title>
+  <style>
+    #inp1 {
+      margin: 10px 15px;
+      width: 25ex;
+    }
+    .item {
+      max-width: 30ex;
+      position: relative;
+    }
+    .del {
+      line-height: 1;
+      width: 7ex;
+      margin: 0 20px;
+      padding: 0 3px;
+      position: absolute;
+      right: -10px;
+    }
+    .del:before {
+      content: 'Delete';
+      font: inherit;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Shopping List</h2>
+  <ol id="list">
+    <li class="item">Tea
+      <button class="del"></button>
+    </li>
+    <li class="item">Milk
+      <button class="del"></button>
+    </li>
+    <li class="item">Water
+      <button class="del"></button>
+    </li>
+  </ol>
+
+  <input id="inp1" name="inp1" placeholder="Grocery Item" />
+  <button onclick="list(inp1.value)">Add</button>
+  <script>
+    var limit = 6
+    var currentAmount = 3;
+    var ol = document.getElementById("list");
+
+    function list(item) {
+
+      //Check we haven't reached our limit.
+      if (currentAmount < limit) {
+        var li = document.createElement("li");
+        var str = document.createTextNode(item);
+        var btn = document.createElement('button');
+        li.appendChild(str);
+        li.appendChild(btn);
+        li.classList.add('item');
+        btn.classList.add('del');
+        ol.appendChild(li);
+        currentAmount++; //Increment our count
+      }
+      return false;
+    }
+
+    ol.addEventListener('click', function(event) {
+      if (event.target != event.curentTarget) {
+        var tgt = event.target;
+        var li = tgt.parentElement;
+        ol.removeChild(li);
+        currentAmount--;
+      }
+      event.stopPropagation();
+    }, false);
+  </script>
+</body>
+
+</html>
