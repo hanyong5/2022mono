@@ -373,6 +373,7 @@ body{
 /* .container.confirm_write .field .inp.subject{flex:1} */
 
 .container.confirm_write .field label{width: 165px;font-weight: 500;}
+.container.confirm_write .field.flex label.lCheck{width: 100%;cursor: pointer;}
 .container.confirm_write .field label .sub{display: block;font-size: 12px;color:#767676}
 .container.confirm_write .field .red{font-size: 12px;color:#ff3535;margin-left: 10px;}
 .container.confirm_write .field .wall{flex:1}
@@ -418,6 +419,9 @@ input[type="checkbox"]:checked + label:after{
 } */
 
 
+input[type="checkbox"]{width: 16px; height: 16px;margin-right: 10px;}
+
+
 button.bbsBtn{display: block;border: 1px solid #e0e0e0;background: white;height: 50px;text-align: center;padding: 13px 20px 20px 20px;cursor:pointer}
 button.bbsBtn.black{background: #000;color:white;border: 0 none;}
 button.bbsBtn.gray{background: #333;color:white;border: 0 none;}
@@ -431,7 +435,7 @@ button.bbsBtn.primary{background:var(--color1);color:white;border: 1px solid var
 .container.claimWrite02 > p{font-size: 20px;color: var(--fcolor1);}
 .container.claimWrite02 fieldset{position: relative;}
 .container.claimWrite02 .plus{position: absolute;right: 0;top:-50px}
-.container.claimWrite02 .fieldWrap{border-top: 2px solid #000;border-bottom: 2px solid var(--gray3);padding: 60px 40px;}
+.container.claimWrite02 .fieldWrap{border-top: 2px solid #000;border-bottom: 2px solid var(--gray3);padding: 20px 30px 30px;}
 .container.claimWrite02 .fieldWrap.bnone{border-top: 0 none;}
 .container.claimWrite02 .field{display: flex;align-items:center;justify-content: space-between;}
 .container.claimWrite02 .fieldWrap .line{width: 100%;height: 2px;background: var(--gray1);margin: 40px 0;}
@@ -439,7 +443,7 @@ button.bbsBtn.primary{background:var(--color1);color:white;border: 1px solid var
 .container.claimWrite02 .field input[type="checkbox"]{width: 16px; height: 16px;margin: 5px;flex-shrink: 0;}
 .container.claimWrite02 .field .checkWrap{display: flex;align-items: center;}
 .container.claimWrite02 .field.column{flex-direction: column;}
-
+.container.claimWrite02 fieldset .subTitle{font-size: 1.1em;}
 
 .container.claimWrite02 .field .cellWrap{display: flex;align-items: center;flex-direction: column;width: 100%;}
 .container.claimWrite02 .field .inpWrap{width: 585px}
@@ -452,11 +456,11 @@ button.bbsBtn.primary{background:var(--color1);color:white;border: 1px solid var
 .container.claimWrite02 .field .addView{width: 100%;} 
 .container.claimWrite02 .field .cell5{display: flex;align-items:center;width: 100%;border-bottom: 1px solid var(--gray3);padding: 10px 0;}
 .container.claimWrite02 .field .cell5 .no{width: 50px;flex-shrink: 0;margin: 5px;}
-.container.claimWrite02 .field .cell5 .no.co{width: 50px;flex-shrink: 0;align-self:stretch;background: #eee;display: flex;justify-content: center;align-items: center;}
+.container.claimWrite02 .field .cell5 .no.co{width: 50px;flex-shrink: 0;align-self:stretch;background: #eee;display: flex;justify-content: center;align-items: center;border-radius:5px}
 .container.claimWrite02 .field .cell5 .etc{width: 130px;flex-shrink: 0;padding: 0 10px;}
 .container.claimWrite02 .field .cell5 .sfield{width: 300px;flex-shrink: 0;}
 .container.claimWrite02 .field .cell5 .liContent{padding: 10px;}
-.container.claimWrite02 .field .cell5 .liContent .pro{margin-bottom: 3px;}
+.container.claimWrite02 .field .cell5 .liContent .pro{margin-bottom: 3px;font-weight: bold;}
 
 .container.claimWrite02 .field .cell5 .liContent .li0{display: flex;}
 .container.claimWrite02 .field .cell5 .liContent .li0:before{content:"0 = ";margin-left:10px;margin-right:3px;width: 25px;flex-shrink: 0;}
@@ -468,6 +472,8 @@ button.bbsBtn.primary{background:var(--color1);color:white;border: 1px solid var
 .container.claimWrite02 .field .cell5 .liContent .li3:before{content:"3 = ";margin-left:10px;margin-right:3px;width: 25px;flex-shrink: 0;}
 .container.claimWrite02 .field .cell5 .liContent .li5{display: flex;}
 .container.claimWrite02 .field .cell5 .liContent .li5:before{content:"5 = ";margin-left:10px;margin-right:3px;width: 25px;flex-shrink: 0;}
+.container.claimWrite02 .field .cell5 .liContent .box{display: flex;}
+.container.claimWrite02 .field .cell5 .liContent .box:before{content:"□";align-self:center;margin-left:5px;margin-right:3px;width: 15px;flex-shrink: 0;font-size:12px;font-weight: bold;}
 
 .container.claimWrite02 .field .cell5 .sfield input[type="radio"]{position: absolute;}
 .container.claimWrite02 .field .cell5 .sfield .rBtn{
@@ -505,7 +511,7 @@ button.bbsBtn.primary{background:var(--color1);color:white;border: 1px solid var
 .container.claimWrite02 .etcRadioWrap>input{position: absolute;}
 .container.claimWrite02 .etcRadioWrap label{
     font-size: 15px;width: 100%;border-radius: 5px;margin-bottom: 5px;position: relative;display: flex;justify-content: center;text-align: center;
-    cursor: pointer;
+    cursor: pointer;height:initial;padding:5px 0
 }
 
 
@@ -832,6 +838,99 @@ button.bbsBtn.primary{background:var(--color1);color:white;border: 1px solid var
 .container.claimWrite02 .sfield> input:nth-child(3) ~ label.r07_02_03{background: var(--gray1)}
 
 
+/* 8 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r08_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r08_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r08_03{background: var(--color1);color:white;}
+
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r08_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r08_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r08_03{background: var(--gray1)}
+
+/* 9 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r09_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r09_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r09_03{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(4):checked ~ label.r09_04{background: var(--color1);color:white;}
+
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r09_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r09_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r09_03{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(4) ~ label.r09_04{background: var(--gray1)}
+
+/* 10 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r10_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r10_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r10_03{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(4):checked ~ label.r10_04{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r10_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r10_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r10_03{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(4) ~ label.r10_04{background: var(--gray1)}
+
+/* 11 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r11_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r11_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r11_03{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(4):checked ~ label.r11_04{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r11_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r11_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r11_03{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(4) ~ label.r11_04{background: var(--gray1)}
+
+/* 12 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r12_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r12_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r12_03{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(4):checked ~ label.r12_04{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r12_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r12_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r12_03{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(4) ~ label.r12_04{background: var(--gray1)}
+
+/* 13 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r13_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r13_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r13_03{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r13_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r13_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r13_03{background: var(--gray1)}
+
+/* 14 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r14_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r14_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r14_03{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r14_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r14_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r14_03{background: var(--gray1)}
+
+/* 15 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r15_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r15_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r15_03{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r15_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r15_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r15_03{background: var(--gray1)}
+
+/* 16 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r16_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r16_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r16_03{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r16_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r16_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r16_03{background: var(--gray1)}
+
+
+
 /* layout */
 @media screen and (max-width:1430px){
     .headerWrap{padding:0 1em}
@@ -889,12 +988,14 @@ button.bbsBtn.primary{background:var(--color1);color:white;border: 1px solid var
 .container.confirm_write .field{display:initial;}
 .container.confirm_write .field.flex{display:flex;}
 .container.confirm_write .field.flex .cell{flex-direction:column;}
-.container.confirm_write .field.flex .lCheck{width: 20px !important;align-self:flex-start;flex-shrink:0}
+/* .container.confirm_write .field.flex .lCheck{width: 20px !important;align-self:flex-start;flex-shrink:0} */
+.container.confirm_write .field.flex .lCheck p{align-self:flex-start}
 .container.confirm_write .field.flex .red{align-self:flex-start}
 .container.confirm_write .field.flex .check{flex:1}
 .container.confirm_write .field label{width: 130px}
 .container.confirm_write .field .wall{display: none;}
 .container.confirm_write .field .cell{margin-bottom: 20px;}
+.container.confirm_write .field.flex .cell{margin-bottom: 0px;}
 .container.confirm_write .field.inp1cell{display: flex;}
 .container.confirm_write .field.etc1{display: flex;}
 
@@ -912,8 +1013,8 @@ button.bbsBtn.primary{background:var(--color1);color:white;border: 1px solid var
 .container.claimWrite02 .field .inpWrap{width: 100%}
 .container.claimWrite02 .field .cell5 .sfield{width: 100px;}
 .container.claimWrite02 .field .sfield.raCell{flex-direction:column}
-.container.claimWrite02 .field .sfield.raCell .rBtn{margin-bottom: 5px;}
-
+.container.claimWrite02 .field .sfield.raCell .rBtn{margin-bottom: 5px;padding: 8px 0;}
+.container.claimWrite02 .fieldWrap{padding: 10px 10px;}
 
 
 
