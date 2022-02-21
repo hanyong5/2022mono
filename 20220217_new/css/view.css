@@ -453,7 +453,7 @@ button.bbsBtn.primary{background:var(--color1);color:white;border: 1px solid var
 .container.claimWrite02 .field .cell5{display: flex;align-items:center;width: 100%;border-bottom: 1px solid var(--gray3);padding: 10px 0;}
 .container.claimWrite02 .field .cell5 .no{width: 50px;flex-shrink: 0;margin: 5px;}
 .container.claimWrite02 .field .cell5 .no.co{width: 50px;flex-shrink: 0;align-self:stretch;background: #eee;display: flex;justify-content: center;align-items: center;}
-.container.claimWrite02 .field .cell5 .etc{width: 100px;flex-shrink: 0;}
+.container.claimWrite02 .field .cell5 .etc{width: 130px;flex-shrink: 0;padding: 0 10px;}
 .container.claimWrite02 .field .cell5 .sfield{width: 300px;flex-shrink: 0;}
 .container.claimWrite02 .field .cell5 .liContent{padding: 10px;}
 .container.claimWrite02 .field .cell5 .liContent .pro{margin-bottom: 3px;}
@@ -489,22 +489,347 @@ button.bbsBtn.primary{background:var(--color1);color:white;border: 1px solid var
 .container.claimWrite02 .text{font-size: 14px;}
 .container.claimWrite02 .text.blue{color:var(--color1)}
 
-.container.claimWrite02 .sfield input[type="radio"]:nth-of-type(1):checked ~ label.b1{background: var(--color1);color:white}
-.container.claimWrite02 .sfield input[type="radio"]:nth-of-type(2):checked ~ label.b2{background: var(--color1);color:white;}
-.container.claimWrite02 .sfield input[type="radio"]:nth-of-type(3):checked ~ label.b3{background: var(--color1);color:white;}
-.container.claimWrite02 .sfield input[type="radio"]:nth-of-type(4):checked ~ label.b4{background: var(--color1);color:white;}
 
-.container.claimWrite02 .sfield input:nth-child(1) ~ label.b1{background: var(--gray1)}
-.container.claimWrite02 .sfield input:nth-child(2) ~ label.b2{background: var(--gray1)}
-.container.claimWrite02 .sfield input:nth-child(3) ~ label.b3{background: var(--gray1)}
-.container.claimWrite02 .sfield input:nth-child(4) ~ label.b4{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r01_01_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r01_01_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r01_01_03{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(4):checked ~ label.r01_01_04{background: var(--color1);color:white;}
 
-
-
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r01_01_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r01_01_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r01_01_03{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(4) ~ label.r01_01_04{background: var(--gray1)}
 
 
 
+.container.claimWrite02 .etcRadioWrap>input{position: absolute;}
+.container.claimWrite02 .etcRadioWrap label{
+    font-size: 15px;width: 100%;border-radius: 5px;margin-bottom: 5px;position: relative;display: flex;justify-content: center;text-align: center;
+    cursor: pointer;
+}
 
+
+
+.container.claimWrite02 .etcRadioWrap input:nth-child(1):checked ~ label.r01_etc_01{background: var(--color3);color:white}
+.container.claimWrite02 .etcRadioWrap input:nth-child(2):checked ~ label.r01_etc_02{background: var(--color3);color:white;}
+.container.claimWrite02 .etcRadioWrap input:nth-child(3):checked ~ label.r01_etc_03{background: var(--color3);color:white;}
+.container.claimWrite02 .etcRadioWrap input:nth-child(4):checked ~ label.r01_etc_04{background: var(--color3);color:white;}
+
+.container.claimWrite02 .etcRadioWrap input:nth-child(1) ~ label.r01_etc_01{background: var(--gray1)}
+.container.claimWrite02 .etcRadioWrap input:nth-child(2) ~ label.r01_etc_02{background: var(--gray1)}
+.container.claimWrite02 .etcRadioWrap input:nth-child(3) ~ label.r01_etc_03{background: var(--gray1)}
+.container.claimWrite02 .etcRadioWrap input:nth-child(4) ~ label.r01_etc_04{background: var(--gray1)}
+
+
+/* 1.2 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r01_02_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r01_02_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r01_02_03{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(4):checked ~ label.r01_02_04{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r01_02_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r01_02_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r01_02_03{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(4) ~ label.r01_02_04{background: var(--gray1)}
+
+
+/* 1.3 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r01_03_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r01_03_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r01_03_03{background: var(--color1);color:white;}
+
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r01_03_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r01_03_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r01_03_03{background: var(--gray1)}
+
+
+
+/* 1.4 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r01_04_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r01_04_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r01_04_03{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(4):checked ~ label.r01_04_04{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r01_04_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r01_04_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r01_04_03{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(4) ~ label.r01_04_04{background: var(--gray1)}
+
+/* 1.5 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r01_05_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r01_05_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r01_05_03{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r01_05_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r01_05_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r01_05_03{background: var(--gray1)}
+
+/* 1.6 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r01_06_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r01_06_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r01_06_03{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(4):checked ~ label.r01_06_04{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r01_06_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r01_06_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r01_06_03{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(4) ~ label.r01_06_04{background: var(--gray1)}
+
+
+/* 1.7 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r01_07_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r01_07_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r01_07_03{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r01_07_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r01_07_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r01_07_03{background: var(--gray1)}
+
+
+/* 1.8 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r01_08_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r01_08_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r01_08_03{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r01_08_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r01_08_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r01_08_03{background: var(--gray1)}
+
+
+/* 2.1 */
+
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r02_01_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r02_01_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r02_01_03{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(4):checked ~ label.r02_01_04{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r02_01_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r02_01_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r02_01_03{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(4) ~ label.r02_01_04{background: var(--gray1)}
+
+/* 2.2 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r02_02_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r02_02_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r02_02_03{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r02_02_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r02_02_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r02_02_03{background: var(--gray1)}
+
+/* 2.3 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r02_03_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r02_03_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r02_03_03{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(4):checked ~ label.r02_03_04{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r02_03_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r02_03_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r02_03_03{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(4) ~ label.r02_03_04{background: var(--gray1)}
+
+/* 2.4 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r02_04_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r02_04_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r02_04_03{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(4):checked ~ label.r02_04_04{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r02_04_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r02_04_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r02_04_03{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(4) ~ label.r02_04_04{background: var(--gray1)}
+
+/* 2.5 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r02_05_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r02_05_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r02_05_03{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(4):checked ~ label.r02_05_04{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r02_05_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r02_05_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r02_05_03{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(4) ~ label.r02_05_04{background: var(--gray1)}
+
+/* 2.6 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r02_06_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r02_06_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r02_06_03{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r02_06_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r02_06_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r02_06_03{background: var(--gray1)}
+
+/* 2.7 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r02_07_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r02_07_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r02_07_03{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r02_07_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r02_07_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r02_07_03{background: var(--gray1)}
+
+/* 2.7 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r02_08_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r02_08_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r02_08_03{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r02_08_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r02_08_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r02_08_03{background: var(--gray1)}
+
+/* 3.1 */
+
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r03_01_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r03_01_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r03_01_03{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(4):checked ~ label.r03_01_04{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r03_01_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r03_01_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r03_01_03{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(4) ~ label.r03_01_04{background: var(--gray1)}
+
+/* 3.2 */
+
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r03_02_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r03_02_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r03_02_03{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(4):checked ~ label.r03_02_04{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r03_02_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r03_02_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r03_02_03{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(4) ~ label.r03_02_04{background: var(--gray1)}
+
+/* 3.3 */
+
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r03_03_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r03_03_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r03_03_03{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(4):checked ~ label.r03_03_04{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r03_03_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r03_03_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r03_03_03{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(4) ~ label.r03_03_04{background: var(--gray1)}
+
+
+/* 3.4 */
+
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r03_04_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r03_04_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r03_04_03{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(4):checked ~ label.r03_04_04{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r03_04_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r03_04_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r03_04_03{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(4) ~ label.r03_04_04{background: var(--gray1)}
+
+
+/* 3.5*/
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r03_05_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r03_05_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r03_05_03{background: var(--color1);color:white;}
+
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r03_05_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r03_05_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r03_05_03{background: var(--gray1)}
+
+/* 3.6 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r03_06_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r03_06_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r03_06_03{background: var(--color1);color:white;}
+
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r03_06_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r03_06_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r03_06_03{background: var(--gray1)}
+
+
+
+/* 4.1 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r04_01_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r04_01_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r04_01_03{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(4):checked ~ label.r04_01_04{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r04_01_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r04_01_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r04_01_03{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(4) ~ label.r04_01_04{background: var(--gray1)}
+
+/* 4.2 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r04_02_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r04_02_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r04_02_03{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r04_02_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r04_02_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r04_02_03{background: var(--gray1)}
+
+/* 4.3 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r04_03_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r04_03_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r04_03_03{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r04_03_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r04_03_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r04_03_03{background: var(--gray1)}
+
+/* 4.4 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r04_04_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r04_04_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r04_04_03{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r04_04_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r04_04_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r04_04_03{background: var(--gray1)}
+
+
+
+/* 5.1 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r05_01_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r05_01_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r05_01_03{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(4):checked ~ label.r05_01_04{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r05_01_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r05_01_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r05_01_03{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(4) ~ label.r05_01_04{background: var(--gray1)}
+
+/* 6.1 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r06_01_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r06_01_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r06_01_03{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r06_01_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r06_01_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r06_01_03{background: var(--gray1)}
+
+/* 7.1 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r07_01_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r07_01_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r07_01_03{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(4):checked ~ label.r07_01_04{background: var(--color1);color:white;}
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r07_01_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r07_01_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r07_01_03{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(4) ~ label.r07_01_04{background: var(--gray1)}
+
+/* 7.2 */
+.container.claimWrite02 .sfield> input:nth-child(1):checked ~ label.r07_02_01{background: var(--color1);color:white}
+.container.claimWrite02 .sfield> input:nth-child(2):checked ~ label.r07_02_02{background: var(--color1);color:white;}
+.container.claimWrite02 .sfield> input:nth-child(3):checked ~ label.r07_02_03{background: var(--color1);color:white;}
+
+
+.container.claimWrite02 .sfield> input:nth-child(1) ~ label.r07_02_01{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(2) ~ label.r07_02_02{background: var(--gray1)}
+.container.claimWrite02 .sfield> input:nth-child(3) ~ label.r07_02_03{background: var(--gray1)}
 
 
 /* layout */
