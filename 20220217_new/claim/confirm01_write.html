@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질병관리청</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/view.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+    
+    <div class="wrap">
+        <header class="headerWrap">
+            <h1><a href="../index.html"><img src="../images/logo.png" alt=""></a></h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">유전자변형생물체 소개</a></li>
+                    <li><a href="#">생물안전∙생물보안 사고·접수</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn">로그인</a>
+        </header>
+        <!-- container  -->
+        <div class="container confirm_write m-auto f-1 mb10">
+            <h3 class="t-center mb6">생물안전 시설 사고보고서</h3>
+            <!-- contents  -->
+            <div class="contents">
+                <form action="#" method="post">
+                    <fieldset class="mb6">
+                        <legend class="mb3">신고자</legend>
+                        <div class="fieldWrap">
+                            <div class="field mb4">
+                                <div class="cell">
+                                    <label for="company">기관(명칭)</label>
+                                    <input type="text" class="inp w400" placeholder="기관(명칭)" name="company" id="company">
+                                </div>
+                                <div class="wall"></div>
+                                <div class="cell">
+                                    <label for="com-code">사업자등록번호<span class="sub">법인등록번호</span></label>
+                                    <input type="text" class="inp w400" placeholder="사업자등록번호" name="com-code" id="com-code">
+                                </div>
+                            </div>
+                            <div class="field mb4">
+                                <div class="cell">
+                                    <label for="com-name">대표자 성명</label>
+                                    <input type="text" class="inp w400" placeholder="대표자 성명" name="com-name" id="com-name">
+                                </div>
+                                <div class="wall"></div>
+                                <div class="cell">
+                                    <label for="tel-number">전화번호</label>
+                                    <input type="text" class="inp w400" placeholder="전화번호" name="tel-number" id="tel-number">
+                                </div>
+                            </div>
+                            <div class="field mb4 inp1cell">
+                                <label for="com-address">사업장주소</label>
+                                <input type="text" class="inp" placeholder="사업장주소" name="com-address" id="com-address">
+                                
+                            </div>
+                            
+                            
+                        </div>
+                    </fieldset>
+                   
+
+                    <div class="conformWrap">
+                        <div class="conform">
+                            <button type="button" class="bbsBtn mr1" onclick="location.href='confirm01_list.html'">목록</button>
+                            <button type="button" class="bbsBtn primary" onclick="location.href='confirm01_list.html'">등록하기</button>
+                        </div>
+                    </div>
+                </form>
+
+
+
+            </div>
+            <!-- contents  --> 
+        </div>
+
+        <footer class="footerWrap">
+            <div class="footer">
+                <div class="clogo"><img src="../images/c_logo.png" alt=""></div>
+                <div class="copyWrap">
+                    <nav class="cNav">
+                        <ul>
+                            <li><a href="#">이용안내</a></li>
+                            <li><div class="bar"></div></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><div class="bar"></div></li>
+                            <li><a href="#">저자권정책</a></li>
+                        </ul>
+        
+                    </nav>
+                    <address>
+                        (28159) 충북 청주시 흥덕구 오송읍 오송생명2로 187 오송보건의료행정타운내 질병관리청<br>COPYRIGHT © 2019 질병관리청 ALL RIGHTS RESERVED.
+                    </address>
+                </div>
+                <div class="co">관련사이트 바로가기</div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

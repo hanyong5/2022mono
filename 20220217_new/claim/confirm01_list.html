@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질병관리청</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/view.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+    
+    <div class="wrap">
+        <header class="headerWrap">
+            <h1><a href="../index.html"><img src="../images/logo.png" alt=""></a></h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">유전자변형생물체 소개</a></li>
+                    <li><a href="#">생물안전∙생물보안 사고·접수</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn">로그인</a>
+        </header>
+        <!-- container  -->
+        <div class="container claConfirmList m-auto f-1 mb10">
+            <h3 class="t-center mb6">생물안전 시설</h3>
+            <!-- contents  -->
+            <div class="contents">
+                <div class="tabWrap mb6">
+                    <ul class="tab">
+                        <li class="active"><a href="confirm01_list.html">생물안전 시설</a></li>
+                        <div class="wall"></div>
+                        <li><a href="confirm02_list.html">고위험병원체 취급</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="sWrap mb3">
+                    <div class="count">총 <span class="red">0</span>건</div>
+                    <div class="search">
+                        <select name="" id="" class="select">
+                            <option value="전체"> 전체</option>
+                            <option value="과제명"> 과제명</option>
+                            <option value="연구기간"> 연구기간</option>
+                            
+                        </select>
+                        <input type="text" placeholder="검색어 입력" class="inp w300"><input type="submit" value="검색" class="iBtn">
+                    </div>
+                    <a href="confirm01_write.html" class="iBtn color2">등록</a>
+                </div>
+                <table class="table">
+                    <colgroup>
+                        <col width="90">
+                        <col width="200">
+                        <col width="*">
+                        <col width="200">
+                        <col width="200">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>진행현황</th>
+                            <th>사고장소</th>
+                            <th>사고일시</th>
+                            <th>신고일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>접수요청</td>
+                            <td class="t-left pl3">사고장소1</td>
+                            <td>2022.01.10 00:00</td>
+                            <td>2021.10.15</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="modi">보완요청</td>
+                            <td class="t-left pl3">사고장소2</td>
+                            <td>2022.01.10 00:00</td>
+                            <td>2021.10.15</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="active">사고완료</td>
+                            <td class="t-left pl3">사고장소3</td>
+                            <td>2022.01.10 00:00</td>
+                            <td>2021.10.15</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>접수요청</td>
+                            <td class="t-left pl3">사고장소1</td>
+                            <td>2022.01.10 00:00</td>
+                            <td>2021.10.15</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="modi">보완요청</td>
+                            <td class="t-left pl3">사고장소2</td>
+                            <td>2022.01.10 00:00</td>
+                            <td>2021.10.15</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td class="active">사고완료</td>
+                            <td class="t-left pl3">사고장소3</td>
+                            <td>2022.01.10 00:00</td>
+                            <td>2021.10.15</td>
+                        </tr><tr>
+                            <td>7</td>
+                            <td>접수요청</td>
+                            <td class="t-left pl3">사고장소1</td>
+                            <td>2022.01.10 00:00</td>
+                            <td>2021.10.15</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td class="modi">보완요청</td>
+                            <td class="t-left pl3">사고장소2</td>
+                            <td>2022.01.10 00:00</td>
+                            <td>2021.10.15</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td class="active">사고완료</td>
+                            <td class="t-left pl3">사고장소3</td>
+                            <td>2022.01.10 00:00</td>
+                            <td>2021.10.15</td>
+                        </tr><tr>
+                            <td>10</td>
+                            <td>접수요청</td>
+                            <td class="t-left pl3">사고장소1</td>
+                            <td>2022.01.10 00:00</td>
+                            <td>2021.10.15</td>
+                        </tr>
+                        
+                       
+                    </tbody>
+                </table>
+                <div class="pager">
+                    <ul>
+                        <li><img src="../images/arrow01.png" alt=""></li>
+                        <li><img src="../images/arrow02.png" alt=""></li>
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#">10</a></li>
+                        <li><img src="../images/arrow03.png" alt=""></li>
+                        <li><img src="../images/arrow04.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- contents  --> 
+        </div>
+
+        <footer class="footerWrap">
+            <div class="footer">
+                <div class="clogo"><img src="../images/c_logo.png" alt=""></div>
+                <div class="copyWrap">
+                    <nav class="cNav">
+                        <ul>
+                            <li><a href="#">이용안내</a></li>
+                            <li><div class="bar"></div></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><div class="bar"></div></li>
+                            <li><a href="#">저자권정책</a></li>
+                        </ul>
+        
+                    </nav>
+                    <address>
+                        (28159) 충북 청주시 흥덕구 오송읍 오송생명2로 187 오송보건의료행정타운내 질병관리청<br>COPYRIGHT © 2019 질병관리청 ALL RIGHTS RESERVED.
+                    </address>
+                </div>
+                <div class="co">관련사이트 바로가기</div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

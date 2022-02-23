@@ -936,6 +936,40 @@ button.bbsBtn.primary{background:var(--color1);color:white;border: 1px solid var
 
 
 
+/* content  claconfirmlist ok */
+.container.claConfirmList .table{width: 100%;margin-bottom: 50px;}
+.container.claConfirmList .table thead{height: 58px;border-bottom: 1px solid #e0e0e0;border-top: 2px solid #000;}
+.container.claConfirmList .table tbody tr{height: 83px;text-align: center;border-bottom: 1px solid #e0e0e0;cursor: pointer;}
+.container.claConfirmList .table tbody tr:hover{background: var(--gray4);}
+.container.claConfirmList .table .active{color:var(--color1)}
+.container.claConfirmList .table .modi{color:#f00}
+
+.container.claConfirmList .tabWrap .tab{
+    display: flex;
+    align-items:center;
+    border: 1px solid #e0e0e0;
+}
+.container.claConfirmList .tabWrap .tab li{
+    flex:1 0 auto;text-align: center;
+    font-size: 18px;
+    padding: 20px 0;
+    cursor: pointer;
+    
+}
+.container.claConfirmList .tabWrap .tab li:hover{background: #000;color:white}
+.container.claConfirmList .tabWrap .tab li.active{background: #000;color:white}
+.container.claConfirmList .tabWrap .tab li:hover a{color:white}
+.container.claConfirmList .tabWrap .tab li.active a{color:white}
+
+.container.claConfirmList .wall{width: 1px;height: 36px;background: #e0e0e0;}
+.container.claConfirmList .sWrap{justify-content:space-between;}
+.container.claConfirmList .sWrap .search{margin-left: initial;}
+.container.claConfirmList .sWrap .iBtn.color2{background: var(--color1);display: flex;justify-content: center;align-items: center;}
+
+
+
+
+
 /* layout */
 @media screen and (max-width:1430px){
     .headerWrap{padding:0 1em}
@@ -981,13 +1015,21 @@ button.bbsBtn.primary{background:var(--color1);color:white;border: 1px solid var
 }
 
 
-/* confirmOk table */
+/* claConfirmList table */
+.container.claConfirmList .table colgroup col:nth-child(1){width: 45px;}
+.container.claConfirmList .table colgroup col:nth-child(2){width: 100px;}
+.container.claConfirmList .table colgroup col:nth-child(4){width: 150px;}
+.container.claConfirmList .table colgroup col:nth-child(5){width: 100px;}
 
+
+/* confirmOk table */
 .container.confirmOk .table colgroup col:nth-child(1){width: 45px;}
 .container.confirmOk .table colgroup col:nth-child(2){width: 120px;}
 .container.confirmOk .table colgroup col:nth-child(3){width: 100px;}
 .container.confirmOk .table colgroup col:nth-child(5){width: 180px;}
 .container.confirmOk .table colgroup col:nth-child(6){width: 120px;}
+
+
 
 /* confirm write  */
 .container.confirm_write .field{display:initial;}
