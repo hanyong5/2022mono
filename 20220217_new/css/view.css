@@ -339,8 +339,8 @@ body{
 
 
 .modalbg{width: 100%;height: 100%;background: rgba(0,0,0,0.3);position: fixed;top: 0;left: 0;z-index: 10;display: none;}
-.modalView{display: none;width: 1000px;height: 600px;background: white;position: fixed;left:50%;top:50%;transform:translate(-50%,-50%);padding:30px 35px;z-index: 11}
-.modalView .titleWrap{display: flex;justify-content: space-between;border-bottom: 2px solid #000;padding-bottom: 20px;}
+.modalView,.modalView0{display: none;width: 1000px;height: 600px;background: white;position: fixed;left:50%;top:50%;transform:translate(-50%,-50%);padding:30px 35px;z-index: 11}
+.modalView .titleWrap,.modalView0 .titleWrap{display: flex;justify-content: space-between;border-bottom: 2px solid #000;padding-bottom: 20px;}
 .modalView .table{width: 100%;}
 .modalView .table tr{height: 50px;text-align: center;border-bottom: 1px solid #aaa;}
 .modalView .table th{background: var(--gray3);font-size: 16px;font-weight: 500;}
@@ -364,6 +364,15 @@ body{
 .modalView .bbsBtn.gray{background: #333;color:white;border: 0 none;}
 .modalView .bbsBtn.primary{background:var(--color1);color:white;border: 1px solid var(--color1);}
 
+.modalView0.confirm{width: 600px;height: 380px;}
+.modalView0 .mdalBtnWrap{display: flex;}
+.modalView0 ul{display: flex;margin-left: auto;}
+.modalView0 .bbsBtn{display: block;border: 1px solid #e0e0e0;background: white;height: 50px;text-align: center;padding: 13px 20px 20px 20px;}
+.modalView0 .bbsBtn.black{background: #000;color:white;border: 0 none;}
+.modalView0 .bbsBtn.gray{background: #333;color:white;border: 0 none;}
+.modalView0 .bbsBtn.primary{background:var(--color1);color:white;border: 1px solid var(--color1);}
+
+
 
 /* confirm write  */
 .container.confirm_write .fieldWrap{border-top: 2px solid #000;border-bottom: 2px solid var(--gray3);padding: 60px 40px;}
@@ -374,6 +383,8 @@ body{
 .container.confirm_write .field.inp1cell  input{flex:1}
 .container.confirm_write .field .selectWrap{display: flex;;flex:1}
 .container.confirm_write .field .selectWrap .subject{width: 400px;margin-left:10px;}
+.container.confirm_write .field textarea{padding:20px 5px;height: 100px;color:#333}
+
 
 /* .container.confirm_write .field .inp.subject{flex:1} */
 

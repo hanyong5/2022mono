@@ -79,65 +79,77 @@
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td class="modi">보완요청</td>
+                            <td class="modi"><a href="javascript:void(0)" class="modal">보안요청</a></td>
                             <td class="t-left pl3">사고장소2</td>
                             <td>2022.01.10 00:00</td>
                             <td>2021.10.15</td>
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td class="active">사고완료</td>
+                            <td class="modi"><a href="javascript:void(0)" class="modal0">사고완료</a></td>
                             <td class="t-left pl3">사고장소3</td>
                             <td>2022.01.10 00:00</td>
                             <td>2021.10.15</td>
                         </tr>
+                       
+                      
                         <tr>
-                            <td>4</td>
-                            <td>접수요청</td>
-                            <td class="t-left pl3">사고장소1</td>
-                            <td>2022.01.10 00:00</td>
-                            <td>2021.10.15</td>
+                            <td></td>
+                            <td></td>
+                            <td class="t-left pl3"></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
-                            <td>5</td>
-                            <td class="modi">보완요청</td>
-                            <td class="t-left pl3">사고장소2</td>
-                            <td>2022.01.10 00:00</td>
-                            <td>2021.10.15</td>
+                            <td></td>
+                            <td></td>
+                            <td class="t-left pl3"></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
-                            <td>6</td>
-                            <td class="active">사고완료</td>
-                            <td class="t-left pl3">사고장소3</td>
-                            <td>2022.01.10 00:00</td>
-                            <td>2021.10.15</td>
-                        </tr><tr>
-                            <td>7</td>
-                            <td>접수요청</td>
-                            <td class="t-left pl3">사고장소1</td>
-                            <td>2022.01.10 00:00</td>
-                            <td>2021.10.15</td>
+                            <td></td>
+                            <td></td>
+                            <td class="t-left pl3"></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
-                            <td>8</td>
-                            <td class="modi">보완요청</td>
-                            <td class="t-left pl3">사고장소2</td>
-                            <td>2022.01.10 00:00</td>
-                            <td>2021.10.15</td>
+                            <td></td>
+                            <td></td>
+                            <td class="t-left pl3"></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
-                            <td>9</td>
-                            <td class="active">사고완료</td>
-                            <td class="t-left pl3">사고장소3</td>
-                            <td>2022.01.10 00:00</td>
-                            <td>2021.10.15</td>
-                        </tr><tr>
-                            <td>10</td>
-                            <td>접수요청</td>
-                            <td class="t-left pl3">사고장소1</td>
-                            <td>2022.01.10 00:00</td>
-                            <td>2021.10.15</td>
+                            <td></td>
+                            <td></td>
+                            <td class="t-left pl3"></td>
+                            <td></td>
+                            <td></td>
                         </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="t-left pl3"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="t-left pl3"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="t-left pl3"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                       
                         
                        
                     </tbody>
@@ -186,6 +198,79 @@
             </div>
         </footer>
     </div>
+
+
+
+    <!-- modal  -->
+<div class="modalbg"></div>
+<div class="modalView confirm">
+    <div class="titleWrap mb3">
+        <h5>보완사유</h5>
+        <a href="#" onclick="modalClose()"><img src="../images/icon_close.png" alt=""></a>
+    </div>
+    <div style="padding:20px;height:200px">
+        상호 및 사업자등록 번호가 잘못 입력되었습니다.
+    </div>
+    <div class="mdalBtnWrap">
+        <ul>
+            <li><a href="confirm01_write.html" class="bbsBtn mr1">수정화면으로이동</a></li>
+            <li><a href="javascript:void(0)" class="bbsBtn primary"  onclick="modalClose()">닫기</a></li>
+        </ul>
+    </div>
+    
+</div>
+
+<div class="modalView0 confirm">
+    <div class="titleWrap mb3">
+        <h5>사고종료내용</h5>
+        <a href="#" onclick="modalClose0()"><img src="../images/icon_close.png" alt=""></a>
+    </div>
+    <div style="padding:20px;height:200px">
+        사고가......해서 종료되었습니다. 
+    </div>
+    <div class="mdalBtnWrap">
+        <ul>
+            <li><a href="javascript:void(0)" class="bbsBtn primary"  onclick="modalClose0()">닫기</a></li>
+        </ul>
+    </div>
+    
+</div>
+<script>
+
+    //modal
+           const modal1 = document.querySelector(".modal");
+           const modalbg = document.querySelector(".modalbg");
+           const modalView1 = document.querySelector(".modalView");
+   
+           modal1.addEventListener("click",function(event){
+               event.preventDefault()
+               modalView1.style.display="block"
+               modalbg.style.display="block"
+           })
+           function modalClose(){
+               event.preventDefault()
+               modalView1.style.display="none"
+               modalbg.style.display="none"
+           }
+
+
+     //modal
+            const modal0 = document.querySelector(".modal0");
+           const modalView0 = document.querySelector(".modalView0");
+   
+           modal0.addEventListener("click",function(event){
+               event.preventDefault()
+               modalView0.style.display="block"
+               modalbg.style.display="block"
+           })
+           function modalClose0(){
+               event.preventDefault()
+               modalView0.style.display="none"
+               modalbg.style.display="none"
+           }
+   
+   
+   </script>
     
 </body>
 </html>
