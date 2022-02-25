@@ -17,7 +17,7 @@
     <div class="wrap">
         <header class="headerWrap">
             <h1><a href="../index.html"><img src="../images/logo.png" alt=""></a></h1>
-            <nav class="gnb">
+            <nav class="gnb claimW1">
                 <ul>
                     <li><a href="#">유전자변형생물체 소개</a></li>
                     <li><a href="#">생물안전∙생물보안 사고·접수</a></li>
@@ -166,8 +166,8 @@
 
                     <div class="conformWrap">
                         <div class="conform">
-                            <button type="button" class="bbsBtn mr1" onclick="location.href='confirm01_list.html'">목록</button>
-                            <button type="button" class="bbsBtn primary" onclick="location.href='confirm01_list.html'">등록하기</button>
+                            <button type="button" class="bbsBtn mr1 modal">보안요청</button>
+                            <button type="button" class="bbsBtn primary modal0">사고종료</button>
                         </div>
                     </div>
                 </form>
@@ -200,6 +200,87 @@
             </div>
         </footer>
     </div>
+
+
+
+
+
+
+    <!-- modal  -->
+<div class="modalbg"></div>
+<div class="modalView confirm">
+    <div class="titleWrap mb1">
+        <h5>보완사유</h5>
+        <a href="#" onclick="modalClose()"><img src="../images/icon_close.png" alt=""></a>
+    </div>
+    <div style="padding:20px;height:200px">
+        <p>상세사유</p>
+        <textarea cols="30" rows="9" style="width: 100%;"></textarea>
+    </div>
+    <div class="mdalBtnWrap">
+        <ul>
+            <li><a href="javascript:void(0)" class="bbsBtn mr1" onclick="modalClose()">등록</a></li>
+            <li><a href="javascript:void(0)" class="bbsBtn primary"  onclick="modalClose()">취소</a></li>
+        </ul>
+    </div>
     
+</div>
+
+
+
+
+<div class="modalView0 confirm">
+    <div class="titleWrap mb2">
+        <h5>사고종료내용</h5>
+        <a href="#" onclick="modalClose0()"><img src="../images/icon_close.png" alt=""></a>
+    </div>
+    <div style="padding:20px;height:200px">
+        <p>상세사유</p>
+        <textarea cols="30" rows="9" style="width: 100%;"></textarea>
+    </div>
+    <div class="mdalBtnWrap">
+        <ul>
+            <li><a href="confirm_admin_list.html" class="bbsBtn mr1">등록</a></li>
+            <li><a href="javascript:void(0)" class="bbsBtn primary"  onclick="modalClose()">취소</a></li>
+        </ul>
+    </div>
+    
+</div>
+<script>
+
+    //modal
+           const modal1 = document.querySelector(".modal");
+           const modalbg = document.querySelector(".modalbg");
+           const modalView1 = document.querySelector(".modalView");
+   
+           modal1.addEventListener("click",function(event){
+               event.preventDefault()
+               modalView1.style.display="block"
+               modalbg.style.display="block"
+           })
+           function modalClose(){
+               event.preventDefault()
+               modalView1.style.display="none"
+               modalbg.style.display="none"
+           }
+
+
+     //modal
+            const modal0 = document.querySelector(".modal0");
+           const modalView0 = document.querySelector(".modalView0");
+   
+           modal0.addEventListener("click",function(event){
+               event.preventDefault()
+               modalView0.style.display="block"
+               modalbg.style.display="block"
+           })
+           function modalClose0(){
+               event.preventDefault()
+               modalView0.style.display="none"
+               modalbg.style.display="none"
+           }
+   
+   
+   </script>
 </body>
 </html>

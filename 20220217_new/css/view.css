@@ -32,6 +32,12 @@ body{
 .gnb.claimW li:nth-child(3):after {display: none;}
 
 
+.gnb.claimW1 li:nth-child(1) {visibility:hidden;}
+.gnb.claimW1 li:nth-child(2):after {display: none;}
+
+
+
+
 .gnb ul{
     display: flex;
     justify-content: space-between;
