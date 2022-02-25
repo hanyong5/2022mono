@@ -50,7 +50,15 @@ body{
     background-image: url(../images/login_icon_out.png);
     transition:0.3s
 }
+.headerWrap .btn.user{
+    background-image: url(../images/login_reg.png);
+}
+.headerWrap .btn.admin{
+    background-image: url(../images/login_admin.png);
+}
 .headerWrap .btn:hover{background-image: url(../images/login_icon_on.png);}
+.headerWrap .btn.user:hover{background-image: url(../images/login_reg.png);}
+.headerWrap .btn.admin:hover{background-image: url(../images/login_admin.png);}
 
 
 
@@ -378,6 +386,9 @@ body{
 .container.confirm_write .fieldWrap{border-top: 2px solid #000;border-bottom: 2px solid var(--gray3);padding: 60px 40px;}
 .container.confirm_write .fieldWrap.bnone{border-top: 0 none;}
 .container.confirm_write .field{display: flex;align-items:center;}
+.container.confirm_write fieldset{position: relative;}
+.container.confirm_write .plus{position: absolute;right: 0;top:-50px}
+.container.confirm_write .plus.btn{padding:10px 20px;background: var(--color1);color:#fff;cursor: pointer;} 
 .container.confirm_write .field .cell{display: flex;align-items:center;}
 .container.confirm_write .field .cell input.inp2cell{width: 400px;}
 .container.confirm_write .field.inp1cell  input{flex:1}
@@ -407,6 +418,7 @@ form fieldset{border: 0 none;}
 .inp.w250{width: 250px !important;}
 .inp.w200{width: 200px !important;}
 .inp.w150{width: 150px !important;}
+.inp.w50{width: 50px !important;}
 .inp.w750{width: 750px !important;}
 .inp.w100{width: 100% !important;}
 .inp.flex1{flex:1}
@@ -428,6 +440,8 @@ form fieldset{border: 0 none;}
     appearance: none;
     
 }
+
+.inp.wCode{font-size: 1.5em;border: 0 none;}
 /* input[type="checkbox"]{display: none;}
 input[type="checkbox"] + label{display: inline-block;width: 20px !important;height: 20px;position: relative;margin-right: 15px;background-image: url(../images/checkbox_off.png);cursor: pointer;}
 input[type="checkbox"]:checked + label:after{

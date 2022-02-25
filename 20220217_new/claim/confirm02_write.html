@@ -28,7 +28,7 @@
         </header>
         <!-- container  -->
         <div class="container confirm_write m-auto f-1 mb10">
-            <h3 class="t-center mb6">생물안전 시설 사고보고서</h3>
+            <h3 class="t-center mb6">고위험병원체 취급 사고보고서</h3>
             <!-- contents  -->
             <div class="contents">
                 <form action="#" method="post">
@@ -36,6 +36,13 @@
                         <legend class="mb3">신고자</legend>
                         <div class="fieldWrap">
                             <div class="field mb4">
+                                
+                                <div class="cell">
+                                    <label for="write-code">접수번호</label>
+                                    <input type="text" id="write-code" name="accNum" class="inp wCode w400" value="" readonly>
+                                    <!-- <div class="wCode">ddddd</div> -->
+                                </div>
+                                <div class="wall"></div>
                                 <div class="cell">
                                     <label for="acc-date">신고일</label>
                                     <input type="date" class="inp w400" placeholder="성명" name="acc-date" id="acc-date">
@@ -74,7 +81,7 @@
                         </div>
                     </fieldset>
                     <fieldset class="mb6">
-                        <legend class="mb3">생물안전관리 책임자</legend>
+                        <legend class="mb3">고위험병원체의 전담관리자</legend>
                         <div class="fieldWrap">
                            
                            
@@ -96,7 +103,7 @@
                                 </div>
                                 <div class="wall"></div>
                                 <div class="cell">
-                                    <label for="depart-tel">직위</label>
+                                    <label for="depart-tel">전화번호</label>
                                     <input type="text" class="inp w400" placeholder="전화번호" name="depart-tel" id="depart-tel">
                                 </div>
                             </div>
@@ -112,7 +119,8 @@
                             <div class="field mb4">
                                 <div class="cell">
                                     <label for="acc-date1">일시</label>
-                                    <input type="date" class="inp w400" placeholder="성명" name="acc-date1" id="acc-date1">
+                                    <input type="date" class="inp w250 mr1" placeholder="성명" name="acc-date1" id="acc-date1">
+                                    <input type="text" class="inp w50 mr1" placeholder="시"> &nbsp;: &nbsp;<input type="text" class="inp w50" placeholder="분">
                                 </div>
                                
                             </div>
@@ -147,6 +155,77 @@
                         </div>
                     </fieldset>
                     <fieldset class="mb6">
+                        <legend class="mb3">고위험병원체</legend>
+                        <div class="fieldWrap">
+                            <div class="field mb4">
+                                <div class="cell">
+                                    <label for="myeng">명칭</label>
+                                    <input type="text" class="inp w400" placeholder="명칭" name="myeng" id="myeng">
+                                </div>
+                                <div class="wall"></div>
+                                <div class="cell">
+                                    <label for="depart-number">관리번호</label>
+                                    <input type="text" class="inp w400" placeholder="관리번호" name="depart-number" id="depart-number">
+                                </div>
+                            </div>
+                            
+                            <div class="field inp1cell mb4">
+                                <label for="acc-cont1">피해내용</label>
+                                <textarea class="inp flex1" placeholder="피해내용" name="acc-cont1" id="acc-cont1"></textarea>
+                                
+                            </div>
+                            <div class="field inp1cell">
+                                <label for="acc-be1">조치내용</label>
+                                <textarea class="inp flex1" placeholder="조치내용" name="acc-be1" id="acc-be1"></textarea>
+                                
+                            </div>
+                          
+                            
+                            
+                        </div>
+                    </fieldset>
+                    <fieldset class="mb6">
+                        <legend class="mb3">고위험병원체 담당자</legend>
+                        <div class="fieldWrap">
+                            <div class="field mb4">
+                                <div class="cell">
+                                    <label for="chif-name1">성명</label>
+                                    <input type="text" class="inp w400" placeholder="성명" name="chif-name1" id="chif-name1">
+                                </div>
+                                <div class="wall"></div>
+                                <div class="cell">
+                                    <label for="loc1">직위</label>
+                                    <input type="text" class="inp w400" placeholder="직위" name="loc1" id="lo1c">
+                                </div>
+                            </div>
+                            <div class="field mb4">
+                                <div class="cell">
+                                    <label for="depart1">소속</label>
+                                    <input type="text" class="inp w400" placeholder="소속" name="depart1" id="depart1">
+                                </div>
+                                <div class="wall"></div>
+                                <div class="cell">
+                                    <label for="depart-tel1">전화번호</label>
+                                    <input type="text" class="inp w400" placeholder="전화번호" name="depart-tel1" id="depart-te1">
+                                </div>
+                            </div>
+                            
+                            <div class="field inp1cell mb4">
+                                <label for="acc-cont2">피해내용</label>
+                                <textarea class="inp flex1" placeholder="피해내용" name="acc-cont2" id="acc-con2"></textarea>
+                                
+                            </div>
+                            <div class="field inp1cell">
+                                <label for="acc-be2">조치내용</label>
+                                <textarea class="inp flex1" placeholder="조치내용" name="acc-be2" id="acc-be2"></textarea>
+                                
+                            </div>
+                          
+                            
+                            
+                        </div>
+                    </fieldset>
+                    <fieldset class="mb6">
                         <legend class="mb3">종합의견</legend>
                         <div class="fieldWrap">
                            
@@ -165,8 +244,8 @@
 
                     <div class="conformWrap">
                         <div class="conform">
-                            <button type="button" class="bbsBtn mr1" onclick="location.href='confirm01_list.html'">목록</button>
-                            <button type="button" class="bbsBtn primary" onclick="location.href='confirm01_list.html'">등록하기</button>
+                            <button type="button" class="bbsBtn mr1" onclick="location.href='confirm02_list.html'">목록</button>
+                            <button type="button" class="bbsBtn primary" onclick="location.href='confirm02_list.html'">등록하기</button>
                         </div>
                     </div>
                 </form>
@@ -199,6 +278,25 @@
             </div>
         </footer>
     </div>
+    <script src="../js/moment.min.js"></script>
+    <script>
+        const today = moment();
+        console.log(today.format("YYYYMMDD"));
+        
+        //난수
+        let str = "";
+        function randocCode(){
+            
+            for(let i=0;i<6;i++){
+                str += Math.floor(Math.random()*10);
+            }
+            return str;
+        }
+        //let numRandom = randocCode();
+        let num = today.format("YYYYMMDDHH") +"-"+  randocCode();
+        
+        document.querySelector(".wCode").value = num;
+    </script>
     
 </body>
 </html>
