@@ -32,9 +32,7 @@ body{
 .gnb.claimW li:nth-child(3):after {display: none;}
 
 
-.gnb.claimW1 li:nth-child(1) {visibility:hidden;}
-.gnb.claimW1 li:nth-child(2):after {display: none;}
-
+.gnb.claimW1{display: none;}
 
 
 
@@ -983,14 +981,14 @@ button.bbsBtn.primary{background:var(--color1);color:white;border: 1px solid var
 .container.claConfirmList .tabWrap .tab li{
     flex:1 0 auto;text-align: center;
     font-size: 18px;
-    padding: 20px 0;
+    
     cursor: pointer;
     
 }
 .container.claConfirmList .tabWrap .tab li:hover{background: #000;color:white}
 .container.claConfirmList .tabWrap .tab li.active{background: #000;color:white}
-.container.claConfirmList .tabWrap .tab li:hover a{color:white}
-.container.claConfirmList .tabWrap .tab li.active a{color:white}
+.container.claConfirmList .tabWrap .tab li:hover a{color:white;display: block;line-height: 66px;}
+.container.claConfirmList .tabWrap .tab li.active a{color:white;display: block;line-height: 66px;}
 
 .container.claConfirmList .wall{width: 1px;height: 36px;background: #e0e0e0;}
 .container.claConfirmList .sWrap{justify-content:space-between;}
